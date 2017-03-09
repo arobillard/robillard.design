@@ -8,13 +8,15 @@ h3,
 h4,
 .nav,
 .icon-label,
-.pt-sans {
+.shree {
   font-family: "Shree Devanagari 714", sans-serif;
 }
 
 .masthead {
-  text-align: center;
-  background-color: #333;
+  background-color: #933;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 h1 {
@@ -35,6 +37,10 @@ h1 {
 
 .text-dg {
   color: #333;
+}
+
+.shadow {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }
 
 .hov-highlight {
@@ -99,6 +105,64 @@ h1 {
   background-image: url("../images/tweet.svg");
 }
 
+.i-link {
+  background-image: url("../images/i-link.svg");
+}
+
+.nav-label {
+  text-align: right;
+  display: block;
+}
+
+.nav-label img:nth-child(2),
+.nav-check:checked ~ .nav-label img:nth-child(1) {
+  display: none;
+}
+
+.lbl-over {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: -1000rem;
+  top: 3.54875rem;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color .5s;
+}
+
+.i-tog {
+  width: 1.5rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.nav-slide {
+  position: fixed;
+  left: -1000rem;
+  top: 3.54875rem;
+  background-color: #333;
+  width: 50%;
+  height: 100vh;
+  transition: left .35s;
+}
+
+.nav-check {
+  position: absolute;
+  left: -1000rem;
+}
+
+.nav-check:checked ~ .nav-label img:nth-child(2) {
+  display: inline-block;
+}
+
+.nav-check:checked ~ .nav-slide {
+  left: 0;
+}
+
+.nav-check:checked ~ .lbl-over {
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+}
+
 /* ----- =Home ----- */
 
 .overlay {
@@ -113,7 +177,7 @@ h1 {
 
 .btn-ban:hover {
   background-color: #333;
-  border-color: #333;
+  border-color: #ddd;
   color: #ddd;
 }
 
@@ -134,12 +198,12 @@ h1 {
 /* ----- =Portfolio ----- */
 
 .bg-blue {
-  background-color: #1b2e70;
+  background-color: #184866;
 }
 
 .under-blue,
 .hov-blue:hover {
-  border-color: #1b2e70;
+  border-color: #184866;
 }
 
 .sub-mast {
@@ -162,13 +226,14 @@ h1 {
 }
 
 .btn-portfolio {
-  background-color: #1b2e70;
+  background-color: #184866;
   border: none;
   color: #fff;
 }
 
 .btn-portfolio:hover {
-  background-color: #051a62;
+  background-color: #12364C;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }
 
 /* ----- =Bio ----- */
@@ -203,6 +268,11 @@ h1 {
     text-align: left;
   }
 
+  .masthead {
+    background-color: #933;
+    position: relative;;
+  }
+
   .push-s {
     margin: 0;
   }
@@ -215,7 +285,6 @@ h1 {
     display: block;
   }
 
-
   .banner {
     max-height: 75vh;
     overflow: hidden;
@@ -223,7 +292,7 @@ h1 {
   }
 
   .overlay {
-    background-color: rgba(0, 0, 0, .25);
+    background-color: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -237,6 +306,10 @@ h1 {
     top: 50%;
     right: 40%;
     transform: translateX(50%) translateY(-50%);
+  }
+
+  .btn-ban:hover {
+    border-color: #333;
   }
 
 }

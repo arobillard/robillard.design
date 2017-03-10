@@ -8,8 +8,8 @@ h3,
 h4,
 .nav,
 .icon-label,
-.shree {
-  font-family: "Shree Devanagari 714", sans-serif;
+.dosis {
+  font-family: Dosis, sans-serif;
 }
 
 .masthead {
@@ -163,6 +163,10 @@ h1 {
   background-color: rgba(0, 0, 0, .5);
 }
 
+main {
+  margin: 3.54875rem 0 0;
+}
+
 /* ----- =Home ----- */
 
 .overlay {
@@ -269,8 +273,15 @@ h1 {
   }
 
   .masthead {
-    background-color: #933;
-    position: relative;;
+    position: relative;
+  }
+
+  .nav {
+    text-align: right;
+  }
+
+  main {
+    margin: 0;
   }
 
   .push-s {

@@ -17,6 +17,7 @@ h4,
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000000;
 }
 
 h1 {
@@ -49,6 +50,11 @@ h1 {
 
 .bg-dg {
   background-color: #333;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 .btn {
@@ -155,6 +161,7 @@ h1 {
   top: 4.849375rem;
   background-color: rgba(0, 0, 0, 0);
   transition: background-color .5s;
+  z-index: 999;
 }
 
 .i-tog {
@@ -171,6 +178,7 @@ h1 {
   width: 50%;
   height: 100vh;
   transition: left .35s;
+  z-index: 1000;
 }
 
 .nav-check {
@@ -244,24 +252,48 @@ main {
   border-color: #ddd;
 }
 
+.prev-hov img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: filter .5s;
+}
+
+.prev-hov:hover img {
+  -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0);
+}
+
 .prev-hov figcaption {
-  border-bottom: 2px solid #ddd;
+  /*border-bottom: 2px solid #ddd;*/
+  transition: opacity .5s;
+}
+
+.prev-hov figcaption:hover {
+  opacity: 0;
 }
 
 .prev-hov p {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ddd;
   transition: border-color 1s;
   display: inline-block;
 }
 
-.prev-hov:hover p {
+/*.prev-hov:hover p {
   border-color: #333;
-}
+}*/
 
 /* ----- =Portfolio ----- */
 
 .bg-blue {
   background-color: #184866;
+}
+
+.bg-blue-50 {
+  background-color: rgba(24, 72, 102, .5);
+}
+
+.bg-blue-75 {
+  background-color: rgba(24, 72, 102, .75);
 }
 
 .under-blue,
@@ -303,6 +335,14 @@ main {
 
 .bg-red {
   background-color: #933;
+}
+
+.bg-red-50 {
+  background-color: rgba(153, 51, 51, .5);
+}
+
+.bg-red-75 {
+  background-color: rgba(153, 51, 51, .75);
 }
 
 .under-red,
@@ -365,6 +405,12 @@ main {
     height: 100%;
     text-align: right;
     background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .banner-body:hover {
+    opacity: 1;
   }
 
   .banner-text {

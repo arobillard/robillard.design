@@ -52,6 +52,10 @@ h1 {
   background-color: #333;
 }
 
+.border-mg {
+  border-color: #aaa;
+}
+
 .grayscale {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
@@ -63,6 +67,10 @@ h1 {
 
 .shadow {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 
 .hov-highlight {
@@ -215,20 +223,20 @@ main {
 }
 
 .btn-ban:hover {
-  background-color: #933;
-  border-color: #933;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #ddd;
   color: #ddd;
 }
 
 .btn-ban:active {
-  background-color: #933;
-  border-color: #933;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #ddd;
   color: #ddd;
 }
 
 .btn-ban:focus {
-  background-color: #933;
-  border-color: #933;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #ddd;
   color: #ddd;
 }
 
@@ -255,7 +263,7 @@ main {
 .prev-hov img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-  transition: filter .5s;
+  transition: filter 1s;
 }
 
 .prev-hov:hover img {
@@ -263,13 +271,32 @@ main {
   filter: grayscale(0);
 }
 
-.prev-hov figcaption {
-  /*border-bottom: 2px solid #ddd;*/
-  transition: opacity .5s;
+.prev-hov figure {
+  overflow: hidden;
 }
 
-.prev-hov figcaption:hover {
+.prev-hov figcaption {
+  transition: opacity 1s, left 1.5s, top 1.5s;
+}
+
+.fade:hover {
   opacity: 0;
+}
+
+.move-left:hover figcaption {
+  left: -20rem;
+}
+
+.move-up:hover figcaption {
+  top: -20rem;
+}
+
+.move-right:hover figcaption {
+  left: 30rem;
+}
+
+.move-down:hover figcaption {
+  top: 30rem;
 }
 
 .prev-hov p {
@@ -329,6 +356,10 @@ main {
 .btn-portfolio:hover {
   color: #12364C;
   background-color: #fff;
+}
+
+.embed-2by1 {
+  padding-top: 50%;
 }
 
 /* ----- =Bio ----- */
@@ -404,8 +435,9 @@ main {
     width: 100%;
     height: 100%;
     text-align: right;
-    background-color: rgba(0, 0, 0, .5);
-    opacity: 0;
+    background-color: rgba(0, 0, 0, .25);
+    /*background-color: rgba(153, 51, 51, .5);*/
+    /*opacity: 0;*/
     transition: opacity 1s;
   }
 
@@ -419,6 +451,10 @@ main {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+  }
+
+  footer nav {
+    text-align: right;
   }
 
 }

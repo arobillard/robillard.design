@@ -45,7 +45,7 @@ h1 {
 }
 
 .text-red {
-  background-color: #933;
+  color: #933;
 }
 
 .bg-dg {
@@ -54,6 +54,14 @@ h1 {
 
 .border-mg {
   border-color: #aaa;
+}
+
+.bor-b-2-lg {
+  border-bottom: 2px solid #ddd;
+}
+
+.w-1-3 {
+  width: 33.3333%;
 }
 
 .grayscale {
@@ -275,14 +283,14 @@ main {
   overflow: hidden;
 }
 
-.prev-hov figcaption {
+.fig-transition {
   transition: opacity 1s, left 1.5s, top 1.5s;
 }
 
 .fade:hover {
   opacity: 0;
 }
-
+/*
 .move-left:hover figcaption {
   left: -20rem;
 }
@@ -297,10 +305,10 @@ main {
 
 .move-down:hover figcaption {
   top: 30rem;
-}
+}*/
 
 .prev-hov p {
-  border-bottom: 2px solid #ddd;
+  /*border-bottom: 2px solid #ddd;*/
   transition: border-color 1s;
   display: inline-block;
 }
@@ -360,6 +368,30 @@ main {
 
 .embed-2by1 {
   padding-top: 50%;
+}
+
+.btn-port {
+  background-color: #ddd;
+  border-color: #ddd;
+}
+
+.btn-port:hover {
+  background-color: transparent;
+  border-color: #ddd;
+}
+
+.btn-port:active {
+  background-color: transparent;
+  border-color: #ddd;
+}
+
+.btn-port:focus {
+  background-color: transparent;
+  border-color: #ddd;
+}
+
+.port-prev {
+  background-color: #933;
 }
 
 /* ----- =Bio ----- */
@@ -465,4 +497,26 @@ main {
     margin-top: -5rem;
   }
 
+}
+
+.to-top {
+	text-align: center;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	display: none;
+  opacity: .5;
+  transition: opacity 1s, background-color 1s;
+  border-radius: 8px;
+}
+.to-top:hover {
+  opacity: 1;
+  /*background-color: #ddd;*/
+}
+
+.top-arrow {
+  width: 2rem;
 }

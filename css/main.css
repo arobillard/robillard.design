@@ -77,6 +77,10 @@ h1 {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }
 
+.shadow-4 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
 .text-shadow {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
@@ -429,6 +433,23 @@ main {
   width: 100%;
 }
 
+.email-icon {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.btn-welcome:hover ~ .email-icon {
+  opacity: 1;
+}
+
+.embed-letter {
+  padding-top: 129.41176471%;
+}
+
+.embed-letter-1-2 {
+  padding-top: calc(129.41176471%/2);
+}
+
 @media only screen and (min-width: 25em) {
 
 
@@ -501,13 +522,17 @@ main {
     text-align: right;
   }
 
-  .email-icon {
-    opacity: 0;
-    transition: opacity 1s;
+  .sample-wrapper {
+    min-width: 13rem;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 
-  .btn-welcome:hover ~ .email-icon {
-    opacity: 1;
+  .embed-letter-l {
+    padding-top: calc(129.41176471%/2);
   }
 
 }

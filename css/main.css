@@ -168,11 +168,6 @@ h1 {
   display: block;
 }
 
-.nav-label img:nth-child(2),
-.nav-check:checked ~ .nav-label img:nth-child(1) {
-  display: none;
-}
-
 .lbl-over {
   position: fixed;
   width: 100%;
@@ -192,11 +187,16 @@ h1 {
 
 .nav-slide {
   position: fixed;
-  left: -1000rem;
+  left: -500px;
+  -webkit-transition: left .5s ease-in-out;
+  -moz-transition: left .5s ease-in-out;
+  -ms-transition: left .5s ease-in-out;
+  -o-transition: left .5s ease-in-out;
+  transition: left .5s ease-in-out;
   top: 4.849375rem;
   background-color: #333;
   width: 50%;
-  height: 100vh;
+  height: calc(100vh - 4.849375rem);
   transition: left .35s;
   z-index: 1000;
 }
@@ -204,10 +204,6 @@ h1 {
 .nav-check {
   position: absolute;
   left: -1000rem;
-}
-
-.nav-check:checked ~ .nav-label img:nth-child(2) {
-  display: inline-block;
 }
 
 .nav-check:checked ~ .nav-slide {
@@ -219,8 +215,58 @@ h1 {
   background-color: rgba(0, 0, 0, .5);
 }
 
+.nav-label {
+  float: right;
+  height: 2rem;
+}
+
+input[type="checkbox"] + label::before {
+  position: absolute;
+  left: -1000px;
+}
+
+.nav-label i:first-child img {
+  -webkit-transition: transform 1s, opacity 1s;
+  -moz-transition: transform 1s, opacity 1s;
+  -ms-transition: transform 1s, opacity 1s;
+  -o-transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s;
+}
+
+.nav-label i:last-child img {
+  opacity: 0;
+  -webkit-transition: transform 1s, opacity 1s;
+  -moz-transition: transform 1s, opacity 1s;
+  -ms-transition: transform 1s, opacity 1s;
+  -o-transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s;
+}
+
+.nav-check:checked ~ .nav-label i:last-child img {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.nav-check:checked ~ .nav-label i:first-child img {
+  transform: rotate(360deg);
+  opacity: 0;
+}
+
 main {
   margin: 4.849375rem 0 0;
+}
+
+a:focus,
+[tabindex="0"]:focus,
+details:focus,
+summary:focus,
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: 0;
+  outline-offset: 0;
+  box-shadow: 0 0 10px #933;
 }
 
 /* ----- =Home ----- */
@@ -291,7 +337,9 @@ main {
   transition: opacity 1s, left 1.5s, top 1.5s;
 }
 
-.fade:hover {
+.fade:hover,
+.fade:active,
+.fade:focus {
   opacity: 0;
 }
 /*
@@ -554,12 +602,11 @@ main {
 	top: 2rem;
 	right: 2rem;
 	display: none;
-  opacity: .5;
-  transition: opacity 1s, background-color 1s;
+  transition: background-color 1s;
   border-radius: 8px;
 }
 .to-top:hover {
-  opacity: 1;
+  /*opacity: 1;*/
   /*background-color: #ddd;*/
 }
 

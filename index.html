@@ -10,236 +10,50 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-100161360-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700|Noto+Serif:400,400i,700" rel="stylesheet">
 </head>
-<body id="top" class="">
-  <header class="masthead">
-    <div class="wrapper grid grid-middle island">
-      <div class="unit xs-3-4 s-3-4 m-2-3 l-2-3">
-        <h1 class="push-0 text-lg">
-          <a class="text-lg no-under" href="index.html">
-            robillard<span class="georgia yotta">.</span><span class="bold">design</span>
-          </a>
-        </h1>
+<body>
+  <header class="masthead fixed w-1 island-1-2">
+    <a class="relative" href="index.html">
+      <i class="scale icon i-3rem">
+        <img src="images/logo-w.svg" alt="">
+      </i>
+      <span class="icon-label hidden">robillard.design</span>
+    </a>
+    <input type="checkbox" id="nav-check" class="nav-check">
+    <label class="scale right relative nav-label" for="nav-check">
+      <span class="tog top"></span>
+      <span class="tog middle"></span>
+      <span class="tog bottom"></span>
+    </label>
+    <nav class="slide-nav gutter-1-2">
+      <div class="pad-t-2 pad-b-2">
+        <ol class="list-group pad-t-2 pad-b-2">
+          <li><a class="sans text-fff yotta no-under relative" href="#">About</a></li>
+          <li><a class="sans text-fff yotta no-under relative" href="#">Work</a></li>
+          <li><a class="sans text-fff yotta no-under relative" href="#">Contact</a></li>
+        </ol>
       </div>
-      <nav class="unit unit-xs-hidden unit-s-hidden m-1-3 l-1-3">
-        <ul class="nav list-group grid text-right">
-          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-2"><a class="text-lg pad-t-1-4 pad-b-1-4 hov-highlight under-red" href="#contact">Contact</a></li>
-          <li class="unit xs-1-2 s-1-2 m-1-2 l-1-2"><a class="text-lg pad-t-1-4 pad-b-1-4 hov-highlight under-red" href="#portfolio">Portfolio</a></li>
-        </ul>
-      </nav>
-      <div class="unit xs-1-4 s-1-4 unit-m-hidden unit-l-hidden">
-        <input type="checkbox" class="nav-check" id="nav-check">
-        <label class="nav-label relative" for="nav-check">
-          <i class="icon i-32 absolute pin-cr">
-            <img class="" src="images/tog.svg" alt="">
-          </i>
-          <i class="icon i-32 absolute pin-cr">
-            <img class="" src="images/tog-x.svg" alt="">
-          </i>
-        </label>
-        <label class="lbl-over" for="nav-check"></label>
-        <div class="nav-slide shadow">
-          <ul class="nav list-group island">
-            <li class="push"><a class="block text-lg pad-t-1-4 pad-b-1-4 no-under" href="#top"><span class="hov-highlight">Top</span></a></li>
-            <li class="push"><a class="block text-lg pad-t-1-4 pad-b-1-4 no-under" href="#contact"><span class="hov-highlight">Contact</span></a></li>
-            <li class="push"><a class="block text-lg pad-t-1-4 pad-b-1-4 no-under" href="#portfolio"><span class="hov-highlight">Portfolio</span></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    </nav>
   </header>
-  <main class="">
-    <div class="banner">
-      <div class="banner-photo">
-        <img class="img-flex banner-img" src="images/tc-steckle.jpg" alt="">
-      </div>
-      <div class="banner-body text-lg">
-        <div class="banner-text wrapper island">
-          <h2 class="yotta text-shadow push-1-2">Look the best. Be the best.</h2>
-          <p class="tera dosis text-shadow">Custom jersey and logo design from an experienced sports designer.</p>
-          <a class="btn btn-ban text-dg dosis mega" href="portfolio/quidditch-canada-2016.html">Learn More</a>
-        </div>
+  <main>
+    <div class="banner relative">
+      <picture class="img-flex">
+        <source media="(min-width: 38em)" srcset="images/soccer-night-large.jpg">
+        <source media="(min-width: 25em)" srcset="images/soccer-night-medium.jpg">
+        <img class="img-flex" src="images/soccer-night-small.jpg" alt="Soccer game at night">
+      </picture>
+      <div class="banner-content absolute w-1 pin-c text-center text-fff sans">
+        <h1 class="text-upper sans relative">Sport design<br><span class="yotta">redefined</h1>
+        <hr>
       </div>
     </div>
-    <section id="contact" class="island bg-blue text-center">
-      <h2 class="push pad-t text-lg normal">Welcome to robillard<span class="zetta">.</span><span class="bold">design</span></h2>
-      <p class="max-length pad-b-1-2 text-lg dosis">My name is Adam Robillard. I am a designer from Ottawa, Canada specializing in web, UX/UI, and branding. My love of design grew from my love of sports, beginning with designing my own amateur sports logos and uniforms. It has since grown to a serious passion and I would love to share it with you.</p>
-      <a class="btn btn-welcome dosis push-1-2 text-blue" href="mailto:robi0653@algonquinlive.com">Let's work together</a>
-      <div class="email-icon icon-link text-lg push-1-2">
-        <span class="icon-label push-1-2 block hidden">Let's work together</span>
-        <i class="icon i-48 i-email"></i>
-      </div>
-    </section>
-    <div id="portfolio" class="wrapper island-1-2">
-      <div class="grid text-center dosis">
-        <div class="island-1-2 prev-hov unit xs-1 s-1-2 m-1-3 l-1-3">
-          <a class="text-dg no-under" href="portfolio/humane-society.html">
-            <figure class="push-0 relative">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/humane-sq.jpg" alt="">
-              </div>
-              <figcaption class="fade fig-transition island-1-4 absolute pin-c w-1 h-1 bg-red-75">
-                <p class="push-0 pad-b-1-4 pad-t-1-4 absolute pin-c bold peta text-lg">Humane Society Newsletter</p>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="island-1-2 prev-hov unit xs-1 s-1-2 m-1-3 l-1-3">
-          <a class="text-dg no-under" href="portfolio/cujo.html">
-            <figure class="push-0 relative">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/cujo.svg" alt="">
-              </div>
-              <figcaption class="fade fig-transition island-1-4 absolute pin-c w-1 h-1 bg-blue-75">
-                <p class="push-0 pad-b-1-4 pad-t-1-4 absolute pin-c bold peta text-lg">Cujo<br>Logo Project</p>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="island-1-2 prev-hov unit xs-1 s-1-2 m-1-3 l-1-3">
-          <a class="text-dg no-under" href="portfolio/quidditch-canada-2016.html">
-            <figure class="push-0 relative">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/tc-steckle-sq.jpg" alt="">
-              </div>
-              <figcaption class="fade fig-transition island-1-4 absolute pin-c w-1 h-1 bg-red-75">
-                <p class="push-0 pad-b-1-4 pad-t-1-4 absolute pin-c bold peta text-lg">Quidditch Canada 2016</p>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="island-1-2 prev-hov unit xs-1 s-1-2 m-1-3 l-1-3">
-          <a class="text-dg no-under" href="portfolio/north-star.html">
-            <figure class="push-0 relative">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/ns-cayden-sq.jpg" alt="">
-              </div>
-              <figcaption class="fade fig-transition island-1-4 absolute pin-c w-1 h-1 bg-blue-75">
-                <p class="push-0 pad-b-1-4 pad-t-1-4 absolute pin-c bold peta text-lg">North Star Quidditch</p>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="island-1-2 prev-hov unit xs-1 s-1-2 m-1-3 l-1-3">
-          <a class="text-dg no-under" href="portfolio/osba.html">
-            <figure class="push-0 relative">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/osba-flag.svg" alt="">
-              </div>
-              <figcaption class="fade fig-transition island-1-4 absolute pin-c w-1 h-1 bg-red-75">
-                <p class="push-0 pad-b-1-4 pad-t-1-4 absolute pin-c bold peta text-lg">OSBA<br>Logo</p>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="island-1-2 prev-hov unit xs-1 s-1-2 m-1-3 l-1-3">
-          <a class="text-dg no-under" href="portfolio/historical-biography.html">
-            <figure class="push-0 relative">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/info-doc.jpg" alt="">
-              </div>
-              <figcaption class="fade fig-transition island-1-4 absolute pin-c w-1 h-1 bg-blue-75">
-                <p class="push-0 pad-b-1-4 pad-t-1-4 absolute pin-c bold peta text-lg">Historical Biography</p>
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
+    <div class="thing">
+
     </div>
   </main>
-  <footer class="footer text-lg island">
-    <div class="wrapper grid grid-middle">
-      <div class="micro t-left-m unit xs-1 s-1 m-3-4 l-3-4 island">
-        <a class="icon-link text-lg hov-highlight pad-t-1-4 pad-b-1-4" href="mailto:robi0653@algonquinlive.com">
-          <i class="icon i-24 i-email"></i>
-          <span class="icon-label pad-l-1-4">robi0653@algonquinlive.com</span>
-        </a>
-      </div>
-      <div class="micro unit xs-1 s-1 m-1-4 l-1-4 island">
-        <nav>
-          <ul class="nav-foot list-group grid">
-            <li class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
-              <a class="icon-link hov-highlight pad-t-1-4 pad-b-1-2" href="https://www.instagram.com/robillard.design/" target="_blank">
-                <i class="icon i-24 i-i-gram"></i>
-                <span class="icon-label hidden">Instagram</span>
-              </a>
-            </li>
-            <li class="unit xs-1-2 s-1-2 m-1-2 l-1-2">
-              <a class="icon-link hov-highlight pad-t-1-4 pad-b-1-2" href="https://www.linkedin.com/in/adam-robillard/" target="_blank">
-                <i class="icon i-24 i-link"></i>
-                <span class="icon-label hidden">LinkedIn</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="micro unit xs-1 s-1 m-1 l-1 island">
-        <p class="push-0 text-mg dosis">All images property of <a class="text-mg no-under hov-highlight pad-b-1-8 border-mg" href="index.html">robillard<span class="kilo">.</span><span class="bold">design</span></a> or used with permission.</p>
-      </div>
-    </div>
+  <footer class="mastfoot gutter-1-2 pad-t-2 pad-b-2">
+    <small class="block text-center"><span class="sans">robillard</span><span class="sans bold">.design</span> is created by Adam Robillard</small>
   </footer>
-  <a class="to-top dosis island-1-2" href="#">
-    <img class="top-arrow" src="images/top-arrow.svg" alt="">
-      <!-- <p class="push-0">to top</p> -->
-  </a>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-  });
-
-  $(document).ready(function(){
-
-  	//Check to see if the window is top if not then display button
-  	$(window).scroll(function(){
-  		if ($(this).scrollTop() > 100) {
-  			$('.to-top').fadeIn();
-  		} else {
-  			$('.to-top').fadeOut();
-  		}
-  	});
-
-  	//Click event to scroll to top
-  	$('.to-top').click(function(){
-  		$('html, body').animate({scrollTop : 0},800);
-  		return false;
-  	});
-
-  });
-  </script>
-
 </body>
-
 </html>

@@ -88,6 +88,7 @@ html {
   width: 100%;
   transition:
     left 1s ease-in-out,
+    top 1s ease-in-out,
     opacity 1s ease-in-out;
   opacity: 1;
 }
@@ -104,13 +105,15 @@ html {
 @media only screen and (min-width: 38em) {
 
   .embed-h2 {
-    left: -100vw;
+    left: -5rem;
+    /*top: 10%;*/
     opacity: 0;
   }
 
   .about-me:hover .embed-h2,
   .work-preview:hover .embed-h2 {
     left: 0;
+    top: 5%;
     opacity: 1;
   }
 

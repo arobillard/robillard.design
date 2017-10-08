@@ -11,14 +11,22 @@ html {
 .masthead {
   z-index: 2000;
   background-color: rgba(30, 30, 73, .9);
+  top: -5rem;
+  left: 0;
+  transition: top 250ms ease-in-out;
 }
 
-/*.navbar-back {
-  background-color: rgba(30, 30, 73,.9);
+.navbar-back {
+  /*background-color: rgba(30, 30, 73,.9);*/
   height: 4.29875rem;
-  z-index: 1000;
+  z-index: 1999;
   position: fixed;
-}*/
+}
+
+.navbar-back:hover + header.masthead,
+header.masthead:hover {
+  top: 0;
+}
 
 .masthead > a,
 .masthead > label {
@@ -76,7 +84,7 @@ html {
 }
 
 .work-preview .grid .embed-item:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 .embed-h2 {

@@ -11,16 +11,15 @@ html {
 .masthead {
   z-index: 2000;
   background-color: rgba(30, 30, 73, .9);
-  top: -5rem;
+  top: 0;
   left: 0;
   transition: top 250ms ease-in-out;
 }
 
 .navbar-back {
-  /*background-color: rgba(30, 30, 73,.9);*/
-  height: 4.29875rem;
+  height: 0;
+  width: 0;
   z-index: 1999;
-  position: fixed;
 }
 
 .navbar-back:hover + header.masthead,
@@ -123,6 +122,16 @@ header.masthead:hover {
     left: 0;
     top: 5%;
     opacity: 1;
+  }
+
+  .masthead {
+    top: -5rem;
+    transition: top 250ms ease-in-out;
+  }
+
+  .navbar-back {
+    height: 4.29875rem;
+    width: 100%;
   }
 
 }

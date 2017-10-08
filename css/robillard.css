@@ -1,0 +1,166 @@
+/* ----- =Accesibility ----- */
+
+a:focus,
+[tabindex="0"]:focus,
+details:focus,
+summary:focus,
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: 0;
+  outline-offset: 0;
+  box-shadow: 0 0 10px #933;
+}
+
+input[type="checkbox"] + label::before {
+  position: absolute;
+  left: -1000rem;
+}
+
+/* ----- =Colors ----- */
+
+.text-fff {
+  color: #fff;
+}
+
+.bg-blue,
+.bg-blue-hov:hover,
+.bg-blue-hov:active,
+.bg-blue-hov:focus {
+  background-color: #1e1e49;
+}
+
+.bg-red,
+.bg-red-hov:hover,
+.bg-red-hov:active,
+.bg-red-hov:focus {
+  background-color: #491e1e;
+}
+
+.bg-393,
+.bg-393-hov:hover,
+.bg-393-hov:active,
+.bg-393-hov:focus {
+  background-color: #1e491e;
+}
+
+.bg-000,
+.bg-000-hov:hover,
+.bg-000-hov:active,
+.bg-000-hov:focus {
+  background-color: #000;
+}
+
+.bg-333,
+.bg-333-hov:hover,
+.bg-333-hov:active,
+.bg-333-hov:focus {
+  background-color: #333;
+}
+
+.bg-666,
+.bg-666-hov:hover,
+.bg-666-hov:active,
+.bg-666-hov:focus {
+  background-color: #666;
+}
+
+.bg-999,
+.bg-999-hov:hover,
+.bg-999-hov:active,
+.bg-999-hov:focus {
+  background-color: #999;
+}
+
+.bg-ccc,
+.bg-ccc-hov:hover,
+.bg-ccc-hov:active,
+.bg-ccc-hov:focus {
+  background-color: #ccc;
+}
+
+.bg-fff,
+.bg-fff-hov:hover,
+.bg-fff-hov:active,
+.bg-fff-hov:focus {
+  background-color: #fff;
+}
+
+/* ----- =Spacing ----- */
+
+.embed-2by1 {
+  padding-top: 50%;
+}
+
+/* ----- =Toggle Nav ----- */
+
+.nav-label {
+  width: 2.5rem;
+  height: 2rem;
+  margin: .5rem;
+  position: relative;
+}
+
+.tog {
+  background-color: #fff;
+  width: 2.5rem;
+  height: .25rem;
+  position: absolute;
+  left: 0;
+  border-radius: 5px;
+  transition: opacity .5s, transform .5s, left .5s, top .5s, bottom .5s;
+}
+
+.top {
+  top: 0;
+}
+
+.middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.nav-check:checked ~ .nav-label .top {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+}
+
+.nav-check:checked ~ .nav-label .middle {
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.nav-check:checked ~ .nav-label .bottom {
+  bottom: 50%;
+  left: 50%;
+  transform: translateY(50%) translateX(-50%) rotate(-45deg);
+}
+
+.slide-nav {
+  position: fixed;
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 0;
+  background-color: rgba(30, 73, 30, .9);
+  z-index: 1000;
+  overflow: hidden;
+  transition: height .5s ease-in-out;
+}
+
+.nav-check:checked ~ .slide-nav {
+  height: 100%;
+}
+
+/* ----- =Typography ----- */
+
+.no-under {
+  text-decoration: none;
+}

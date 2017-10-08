@@ -20,11 +20,7 @@ html {
   height: 0;
   width: 0;
   z-index: 1999;
-}
-
-.navbar-back:hover + header.masthead,
-header.masthead:hover {
-  top: 0;
+  position: fixed;
 }
 
 .masthead > a,
@@ -125,13 +121,18 @@ header.masthead:hover {
   }
 
   .masthead {
-    top: -5rem;
+    top: -10rem;
     transition: top 250ms ease-in-out;
   }
 
   .navbar-back {
     height: 4.29875rem;
     width: 100%;
+  }
+
+  .navbar-back:hover + header.masthead,
+  header.masthead:hover {
+    top: 0;
   }
 
 }

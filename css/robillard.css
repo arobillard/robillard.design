@@ -149,7 +149,7 @@ input[type="checkbox"] + label::before {
   height: 0;
   left: 0;
   top: 0;
-  background-color: rgba(30, 73, 30, .9);
+  background-color: rgba(30, 30, 73, .9);
   z-index: 1000;
   overflow: hidden;
   transition: height .5s ease-in-out;

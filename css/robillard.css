@@ -57,6 +57,13 @@ input[type="checkbox"] + label::before {
   background-color: #491e1e;
 }
 
+.bg-red-1-2,
+.bg-red-1-2-hov:hover,
+.bg-red-1-2-hov:active,
+.bg-red-1-2-hov:focus {
+  background-color: rgba(73, 30, 30, .9);
+}
+
 .bg-393,
 .bg-393-hov:hover,
 .bg-393-hov:active,

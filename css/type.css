@@ -1,6 +1,6 @@
 /*
   Typografier || Code released under the UNLICENSE
-  https://typografier.web-dev.tools/#0,100,1.3,1.125,0;38,110,1.4,1.250,1;60,120,1.5,1.333,1;90,130,1.5,1.333,1
+  https://typografier.web-dev.tools/#0,100,1.3,1.250,0;38,110,1.4,1.333,1;60,120,1.5,1.414,1;90,130,1.5,1.414,1
 */
 
 html {
@@ -170,62 +170,62 @@ caption {
 }
 
 .tenamega {
-  font-size: 3.6532rem;
-  line-height: 4.875rem;
+  font-size: 11.6415rem;
+  line-height: 15.275rem;
 }
 
 .tenakilo {
-  font-size: 3.2473rem;
-  line-height: 4.225rem;
+  font-size: 9.3132rem;
+  line-height: 12.35rem;
 }
 
 .tena {
-  font-size: 2.8865rem;
-  line-height: 3.9rem;
+  font-size: 7.4506rem;
+  line-height: 9.75rem;
 }
 
 .nina {
-  font-size: 2.5658rem;
-  line-height: 3.575rem;
+  font-size: 5.9605rem;
+  line-height: 7.8rem;
 }
 
 .yotta {
-  font-size: 2.2807rem;
-  line-height: 3.25rem;
+  font-size: 4.7684rem;
+  line-height: 6.5rem;
 }
 
 .zetta {
-  font-size: 2.0273rem;
-  line-height: 2.925rem;
+  font-size: 3.8147rem;
+  line-height: 5.2rem;
 }
 
 h1,
 .exa {
-  font-size: 1.802rem;
-  line-height: 2.6rem;
+  font-size: 3.0518rem;
+  line-height: 4.225rem;
 }
 
 h2,
 .peta {
-  font-size: 1.6018rem;
-  line-height: 2.275rem;
+  font-size: 2.4414rem;
+  line-height: 3.25rem;
 }
 
 h3,
 .tera {
-  font-size: 1.4238rem;
-  line-height: 1.95rem;
+  font-size: 1.9531rem;
+  line-height: 2.6rem;
 }
 
 h4,
 .giga {
-  font-size: 1.2656rem;
-  line-height: 1.95rem;
+  font-size: 1.5625rem;
+  line-height: 2.275rem;
 }
 
 h5,
 .mega {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.625rem;
 }
 
@@ -239,13 +239,13 @@ textarea {
 
 small,
 .milli {
-  font-size: .8889rem;
+  font-size: .8rem;
   line-height: 1.3rem;
 }
 
 .micro {
-  font-size: .7901rem;
-  line-height: 1.3rem;
+  font-size: .64rem;
+  line-height: .975rem;
 }
 
 ul {
@@ -475,62 +475,62 @@ legend {
   }
 
   .tenamega {
-    font-size: 11.6415rem;
-    line-height: 15.4rem;
+    font-size: 23.6119rem;
+    line-height: 30.8rem;
   }
 
   .tenakilo {
-    font-size: 9.3132rem;
-    line-height: 12.25rem;
+    font-size: 17.7134rem;
+    line-height: 23.1rem;
   }
 
   .tena {
-    font-size: 7.4506rem;
-    line-height: 9.8rem;
+    font-size: 13.2884rem;
+    line-height: 17.5rem;
   }
 
   .nina {
-    font-size: 5.9605rem;
-    line-height: 8.05rem;
+    font-size: 9.9688rem;
+    line-height: 13.3rem;
   }
 
   .yotta {
-    font-size: 4.7684rem;
-    line-height: 6.3rem;
+    font-size: 7.4784rem;
+    line-height: 9.8rem;
   }
 
   .zetta {
-    font-size: 3.8147rem;
-    line-height: 5.25rem;
+    font-size: 5.6102rem;
+    line-height: 7.35rem;
   }
 
   h1,
   .exa {
-    font-size: 3.0518rem;
-    line-height: 4.2rem;
+    font-size: 4.2087rem;
+    line-height: 5.6rem;
   }
 
   h2,
   .peta {
-    font-size: 2.4414rem;
-    line-height: 3.5rem;
+    font-size: 3.1573rem;
+    line-height: 4.2rem;
   }
 
   h3,
   .tera {
-    font-size: 1.9531rem;
-    line-height: 2.8rem;
+    font-size: 2.3686rem;
+    line-height: 3.15rem;
   }
 
   h4,
   .giga {
-    font-size: 1.5625rem;
-    line-height: 2.1rem;
+    font-size: 1.7769rem;
+    line-height: 2.45rem;
   }
 
   h5,
   .mega {
-    font-size: 1.25rem;
+    font-size: 1.333rem;
     line-height: 1.75rem;
   }
 
@@ -544,12 +544,12 @@ legend {
 
   small,
   .milli {
-    font-size: .8rem;
+    font-size: .7502rem;
     line-height: 1.4rem;
   }
 
   .micro {
-    font-size: .64rem;
+    font-size: .5628rem;
     line-height: 1.05rem;
   }
 
@@ -802,62 +802,62 @@ legend {
   }
 
   .tenamega {
-    font-size: 23.6119rem;
-    line-height: 30.75rem;
+    font-size: 45.1797rem;
+    line-height: 58.875rem;
   }
 
   .tenakilo {
-    font-size: 17.7134rem;
-    line-height: 23.25rem;
+    font-size: 31.9517rem;
+    line-height: 41.625rem;
   }
 
   .tena {
-    font-size: 13.2884rem;
-    line-height: 17.625rem;
+    font-size: 22.5967rem;
+    line-height: 29.625rem;
   }
 
   .nina {
-    font-size: 9.9688rem;
-    line-height: 13.125rem;
+    font-size: 15.9807rem;
+    line-height: 21rem;
   }
 
   .yotta {
-    font-size: 7.4784rem;
-    line-height: 9.75rem;
+    font-size: 11.3018rem;
+    line-height: 15rem;
   }
 
   .zetta {
-    font-size: 5.6102rem;
-    line-height: 7.5rem;
+    font-size: 7.9928rem;
+    line-height: 10.5rem;
   }
 
   h1,
   .exa {
-    font-size: 4.2087rem;
-    line-height: 5.625rem;
+    font-size: 5.6526rem;
+    line-height: 7.5rem;
   }
 
   h2,
   .peta {
-    font-size: 3.1573rem;
-    line-height: 4.125rem;
+    font-size: 3.9976rem;
+    line-height: 5.25rem;
   }
 
   h3,
   .tera {
-    font-size: 2.3686rem;
-    line-height: 3.375rem;
+    font-size: 2.8271rem;
+    line-height: 3.75rem;
   }
 
   h4,
   .giga {
-    font-size: 1.7769rem;
+    font-size: 1.9994rem;
     line-height: 2.625rem;
   }
 
   h5,
   .mega {
-    font-size: 1.333rem;
+    font-size: 1.414rem;
     line-height: 1.875rem;
   }
 
@@ -871,12 +871,12 @@ legend {
 
   small,
   .milli {
-    font-size: .7502rem;
+    font-size: .7072rem;
     line-height: 1.125rem;
   }
 
   .micro {
-    font-size: .5628rem;
+    font-size: .5002rem;
     line-height: .75rem;
   }
 
@@ -1129,62 +1129,62 @@ legend {
   }
 
   .tenamega {
-    font-size: 23.6119rem;
-    line-height: 30.75rem;
+    font-size: 45.1797rem;
+    line-height: 58.875rem;
   }
 
   .tenakilo {
-    font-size: 17.7134rem;
-    line-height: 23.25rem;
+    font-size: 31.9517rem;
+    line-height: 41.625rem;
   }
 
   .tena {
-    font-size: 13.2884rem;
-    line-height: 17.625rem;
+    font-size: 22.5967rem;
+    line-height: 29.625rem;
   }
 
   .nina {
-    font-size: 9.9688rem;
-    line-height: 13.125rem;
+    font-size: 15.9807rem;
+    line-height: 21rem;
   }
 
   .yotta {
-    font-size: 7.4784rem;
-    line-height: 9.75rem;
+    font-size: 11.3018rem;
+    line-height: 15rem;
   }
 
   .zetta {
-    font-size: 5.6102rem;
-    line-height: 7.5rem;
+    font-size: 7.9928rem;
+    line-height: 10.5rem;
   }
 
   h1,
   .exa {
-    font-size: 4.2087rem;
-    line-height: 5.625rem;
+    font-size: 5.6526rem;
+    line-height: 7.5rem;
   }
 
   h2,
   .peta {
-    font-size: 3.1573rem;
-    line-height: 4.125rem;
+    font-size: 3.9976rem;
+    line-height: 5.25rem;
   }
 
   h3,
   .tera {
-    font-size: 2.3686rem;
-    line-height: 3.375rem;
+    font-size: 2.8271rem;
+    line-height: 3.75rem;
   }
 
   h4,
   .giga {
-    font-size: 1.7769rem;
+    font-size: 1.9994rem;
     line-height: 2.625rem;
   }
 
   h5,
   .mega {
-    font-size: 1.333rem;
+    font-size: 1.414rem;
     line-height: 1.875rem;
   }
 
@@ -1198,12 +1198,12 @@ legend {
 
   small,
   .milli {
-    font-size: .7502rem;
+    font-size: .7072rem;
     line-height: 1.125rem;
   }
 
   .micro {
-    font-size: .5628rem;
+    font-size: .5002rem;
     line-height: .75rem;
   }
 

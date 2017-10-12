@@ -10,12 +10,31 @@ button:focus,
 select:focus {
   outline: 0;
   outline-offset: 0;
-  box-shadow: 0 0 10px #933;
+  box-shadow: 0 0 10px #491e1e;
 }
 
 input[type="checkbox"] + label::before {
   position: absolute;
   left: -1000rem;
+}
+
+/* ----- =Buttons ----- */
+
+.btn-banner {
+  background-color: rgba(73, 30, 30, .9);
+  border: none;
+  border-radius: 15px;
+  transition:
+    background-color 250ms ease-in-out,
+    color 250ms ease-in-out,
+    border-color250m1s ease-in-out;
+}
+
+.btn-banner:hover,
+.btn-banner:focus,
+.btn-banner:active {
+  background-color: #491e1e;
+  border-color: #1e1e49;
 }
 
 /* ----- =Colors ----- */
@@ -149,7 +168,7 @@ input[type="checkbox"] + label::before {
   height: 0;
   left: 0;
   top: 0;
-  background-color: rgba(30, 30, 73, .9);
+  background-color: rgba(73, 30, 30, .9);
   z-index: 1000;
   overflow: hidden;
   transition: height .5s ease-in-out;

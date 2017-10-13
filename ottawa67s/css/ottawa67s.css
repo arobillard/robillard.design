@@ -1,3 +1,18 @@
+/* ----- =Colors ----- */
+.text-red,
+.text-red-hov:hover,
+.text-red-hov:active,
+.text-red-hov:focus {
+  color: rgb(172, 33, 45);
+}
+
+.bg-red,
+.bg-red-hov:hover,
+.bg-red-hov:active,
+.bg-red-hov:focus {
+  background-color: rgb(172, 33, 45);
+}
+
 /* ----- =Masthead ----- */
 
 .masthead {
@@ -26,31 +41,23 @@
   color: #ac212d;
 }
 
+.rationale {
+  /*background: url("../images/rink-plays.svg") -7.5rem 1rem / 25rem auto no-repeat;*/
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),  url("../images/plays-rationale.svg");
+  background-position: left top, center 2rem;
+  background-size: cover,  auto 90%;
+  background-repeat: no-repeat;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+figcaption {
+  font-family: "Noto Sans", sans-serif;
+}
 
 @media only screen and (min-width: 90em) {
 
-  /*.banner-content-bg {
-    background-color: transparent;
-  }
-
-  .banner-content {
-    left: auto;
-    top: auto;
-    right: 1rem;
-    bottom: 1rem;
-    transform: translate(0, 0);
-    text-align: right;
-  }
-
-  h1 {
-    font-size: 4.75rem;
-    line-height: 7.25rem;
-    margin: 0;
-  }
-
-  .max-length {
-    margin: 0 0 0 auto;
-    max-width: 15em;
-  }*/
 
 }

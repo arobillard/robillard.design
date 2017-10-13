@@ -43,6 +43,13 @@ input[type="checkbox"] + label::before {
   color: #fff;
 }
 
+.text-red,
+.text-red-hov:hover,
+.text-red-hov:active,
+.text-red-hov:focus {
+  color: #491e1e;
+}
+
 .bg-blue,
 .bg-blue-hov:hover,
 .bg-blue-hov:active,

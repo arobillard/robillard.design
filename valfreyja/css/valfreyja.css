@@ -1,26 +1,26 @@
 /* ----- =Colors ----- */
-.text-red,
-.text-red-hov:hover,
-.text-red-hov:active,
-.text-red-hov:focus {
-  color: #b21e28;
+.text-yellow,
+.text-yellow-hov:hover,
+.text-yellow-hov:active,
+.text-yellow-hov:focus {
+  color: #dcbf30;
 }
 
-.bg-red,
-.bg-red-hov:hover,
-.bg-red-hov:active,
-.bg-red-hov:focus {
-  background-color: #b21e28;
+.bg-yellow,
+.bg-yellow-hov:hover,
+.bg-yellow-hov:active,
+.bg-yellow-hov:focus {
+  background-color: #dcbf30;
 }
 
 /* ----- =Masthead ----- */
 
 .masthead {
-  background-color: rgba(178, 30, 40, .9);
+  background-color: rgba(220, 191, 48, .9);
 }
 
 .slide-nav {
-    background-color: rgba(178, 30, 40, .9);
+    background-color: rgba(220, 191, 48, .9);
 }
 
 /* ----- =Main ----- */
@@ -31,6 +31,21 @@
 
 .banner-content-bg {
   background-color: rgba(0, 0, 0, .6);
+}
+
+h2 + p a {
+  color: #000;
+  text-decoration: none;
+  transition:
+    color 250ms linear;
+}
+
+h2 + p a:hover {
+  color: #393;
+}
+
+.img-flex {
+  border: 2px solid #e2e2e2;
 }
 
 @media only screen and (min-width: 60em) {

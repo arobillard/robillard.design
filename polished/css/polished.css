@@ -1,26 +1,26 @@
 /* ----- =Colors ----- */
-.text-red,
-.text-red-hov:hover,
-.text-red-hov:active,
-.text-red-hov:focus {
-  color: #b21e28;
+.text-green,
+.text-green-hov:hover,
+.text-green-hov:active,
+.text-green-hov:focus {
+  color: #393;
 }
 
-.bg-red,
-.bg-red-hov:hover,
-.bg-red-hov:active,
-.bg-red-hov:focus {
-  background-color: #b21e28;
+.bg-green,
+.bg-green-hov:hover,
+.bg-green-hov:active,
+.bg-green-hov:focus {
+  background-color: #393;
 }
 
 /* ----- =Masthead ----- */
 
 .masthead {
-  background-color: rgba(178, 30, 40, .9);
+  background-color: rgba(51, 153, 51, .9);
 }
 
 .slide-nav {
-    background-color: rgba(178, 30, 40, .9);
+    background-color: rgba(51, 153, 51, .9);
 }
 
 /* ----- =Main ----- */
@@ -31,6 +31,21 @@
 
 .banner-content-bg {
   background-color: rgba(0, 0, 0, .6);
+}
+
+h2 + p a {
+  color: #000;
+  text-decoration: none;
+  transition:
+    color 250ms linear;
+}
+
+h2 + p a:hover {
+  color: #393;
+}
+
+.img-flex {
+  border: 2px solid #e2e2e2;
 }
 
 @media only screen and (min-width: 60em) {

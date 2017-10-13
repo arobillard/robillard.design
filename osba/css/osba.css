@@ -1,26 +1,26 @@
 /* ----- =Colors ----- */
-.text-red,
-.text-red-hov:hover,
-.text-red-hov:active,
-.text-red-hov:focus {
-  color: #b21e28;
+.text-purple,
+.text-purple-hov:hover,
+.text-purple-hov:active,
+.text-purple-hov:focus {
+  color: #5e0d8b;
 }
 
-.bg-red,
-.bg-red-hov:hover,
-.bg-red-hov:active,
-.bg-red-hov:focus {
-  background-color: #b21e28;
+.bg-purple,
+.bg-purple-hov:hover,
+.bg-purple-hov:active,
+.bg-purple-hov:focus {
+  background-color: #5e0d8b;
 }
 
 /* ----- =Masthead ----- */
 
 .masthead {
-  background-color: rgba(178, 30, 40, .9);
+  background-color: rgba(94, 13, 139, .9);
 }
 
 .slide-nav {
-    background-color: rgba(178, 30, 40, .9);
+  background-color: rgba(94, 13, 139, .9);
 }
 
 /* ----- =Main ----- */
@@ -32,6 +32,7 @@
 .banner-content-bg {
   background-color: rgba(0, 0, 0, .6);
 }
+
 
 @media only screen and (min-width: 60em) {
 

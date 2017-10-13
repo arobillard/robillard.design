@@ -22,18 +22,17 @@
       </i>
       <span class="icon-label hidden">robillard.design</span>
     </a>
-    <input type="checkbox" id="nav-check" class="nav-check">
-    <label class="scale right relative nav-label" for="nav-check">
+    <div id="nav-tog" onclick="toggleNav(), toggleNavTog()" class="scale right relative nav-label nav-label-closed">
       <span class="tog top"></span>
       <span class="tog middle"></span>
       <span class="tog bottom"></span>
-    </label>
-    <nav class="slide-nav gutter-1-2">
+    </div>
+    <nav id="slide-nav" class="slide-nav nav-closed gutter-1-2">
       <div class="pad-t-2 pad-b-2">
         <ol class="list-group pad-t-2 pad-b-2">
-          <li class="push-2"><a class="exa relative" href="#work">Work</a></li>
-          <li class="push-2"><a class="exa relative" href="#about">About</a></li>
-          <li class="push-2"><a class="exa relative" href="#contact">Contact</a></li>
+          <li class="push-2"><a onclick="toggleNav(), toggleNavTog()" class="exa relative" href="#work">Work</a></li>
+          <li class="push-2"><a onclick="toggleNav(), toggleNavTog()" class="exa relative" href="#about">About</a></li>
+          <li class="push-2"><a onclick="toggleNav(), toggleNavTog()" class="exa relative" href="#contact">Contact</a></li>
         </ol>
       </div>
     </nav>
@@ -46,7 +45,7 @@
         <h1 class="text-upper sans relative">Branding. UX/UI. Web.</h1>
         <p class="giga sans push-2">Let's work together to create something amazing.</p>
         <div>
-          <a class="btn btn-banner giga sans" href="#contact">Start now.</a>
+          <a class="btn btn-banner giga sans" href="#work">Start Now</a>
         </div>
       </div>
     </div>
@@ -160,7 +159,7 @@
           <p class="push-0 text-center mega island-1-2">My name is Adam Robillard. I am a designer who is passionate about branding, UX/UI, and web design. I am always looking for new ways to challenge myself and expand my design skills. Let's work together to create something amazing.</p>
         </div>
       </div>
-      <p class="text-center push-0 sans">Clients I have worked with:</p>
+      <!-- <p class="text-center push-0 sans giga">Clients I have worked with:</p> -->
       <div class="grid wrapper pad-b-2 bg-fff">
         <div class="unit xs-1-2 s-1-2 m-1-4 l-1-4 island-2">
           <a href="http://www.algonquincollege.com/mediaanddesign/program/graphic-design/" target="_blank">
@@ -270,6 +269,7 @@
   <footer class="mastfoot gutter-1-2 pad-t-2 pad-b-2 bg-333">
     <small class="block text-center"><span class="sans">robillard</span><span class="sans bold">.design</span> is created by Adam Robillard</small>
   </footer>
+  <script src="js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
@@ -296,6 +296,17 @@
         } // End if
       });
     });
+
+    function toggleNav() {
+      document.getElementById("slide-nav").classList.toggle("nav-closed");
+      document.getElementById("slide-nav").classList.toggle("nav-open");
+    };
+
+    function toggleNavTog() {
+      document.getElementById("nav-tog").classList.toggle("nav-labal-closed");
+      document.getElementById("nav-tog").classList.toggle("nav-label-open");
+    };
+
   </script>
 </body>
 </html>

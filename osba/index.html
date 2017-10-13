@@ -23,18 +23,17 @@
       </i>
       <span class="icon-label hidden">robillard.design</span>
     </a>
-    <input type="checkbox" id="nav-check" class="nav-check">
-    <label class="scale right relative nav-label" for="nav-check">
+    <div id="nav-tog" onclick="toggleNav(), toggleNavTog()" class="scale right relative nav-label nav-label-closed">
       <span class="tog top"></span>
       <span class="tog middle"></span>
       <span class="tog bottom"></span>
-    </label>
-    <nav class="slide-nav gutter-1-2">
+    </div>
+    <nav id="slide-nav" class="slide-nav nav-closed gutter-1-2">
       <div class="pad-t-2 pad-b-2">
         <ol class="list-group pad-t-2 pad-b-2">
-          <li class="push-2"><a class="exa relative" href="../index.html">Home</a></li>
-          <li class="push-2"><a class="exa relative" href="#project">Project</a></li>
-          <li class="push-2"><a class="exa relative" href="#contact">Contact</a></li>
+          <li class="push-2"><a onclick="toggleNav(), toggleNavTog()" class="exa relative" href="../index.html">Home</a></li>
+          <li class="push-2"><a onclick="toggleNav(), toggleNavTog()" class="exa relative" href="#project">Project</a></li>
+          <li class="push-2"><a onclick="toggleNav(), toggleNavTog()" class="exa relative" href="#contact">Contact</a></li>
         </ol>
       </div>
     </nav>
@@ -136,6 +135,15 @@
         } // End if
       });
     });
+    function toggleNav() {
+      document.getElementById("slide-nav").classList.toggle("nav-closed");
+      document.getElementById("slide-nav").classList.toggle("nav-open");
+    };
+
+    function toggleNavTog() {
+      document.getElementById("nav-tog").classList.toggle("nav-labal-closed");
+      document.getElementById("nav-tog").classList.toggle("nav-label-open");
+    };
   </script>
 </body>
 </html>

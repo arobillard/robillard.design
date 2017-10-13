@@ -1,0 +1,56 @@
+/* ----- =Masthead ----- */
+
+.masthead {
+  background-color: rgba(172, 33, 45, .9);
+}
+
+.slide-nav {
+    background-color: rgba(172, 33, 45, .9);
+}
+
+/* ----- =Main ----- */
+
+.banner {
+  background: url("../images/puck.jpg") center bottom / cover no-repeat;
+}
+
+.banner-content-bg {
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.banner-content {
+  color: #000;
+}
+
+.banner-content h1 {
+  color: #ac212d;
+}
+
+
+@media only screen and (min-width: 90em) {
+
+  /*.banner-content-bg {
+    background-color: transparent;
+  }
+
+  .banner-content {
+    left: auto;
+    top: auto;
+    right: 1rem;
+    bottom: 1rem;
+    transform: translate(0, 0);
+    text-align: right;
+  }
+
+  h1 {
+    font-size: 4.75rem;
+    line-height: 7.25rem;
+    margin: 0;
+  }
+
+  .max-length {
+    margin: 0 0 0 auto;
+    max-width: 15em;
+  }*/
+
+}

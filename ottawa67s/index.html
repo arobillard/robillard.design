@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>robillard.design</title>
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../css/modules.css" rel="stylesheet">
+  <link href="../css/grid.css" rel="stylesheet">
+  <link href="../css/type.css" rel="stylesheet">
+  <link href="../css/robillard.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="css/ottawa67s.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700|Noto+Serif:400,400i,700" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar-back fixed pin-tl"></div>
+  <header class="masthead fixed w-1 island-1-2">
+    <a class="relative" href="../index.html">
+      <i class="scale icon i-3rem">
+        <img src="../images/logo-w.svg" alt="">
+      </i>
+      <span class="icon-label hidden">robillard.design</span>
+    </a>
+    <input type="checkbox" id="nav-check" class="nav-check">
+    <label class="scale right relative nav-label" for="nav-check">
+      <span class="tog top"></span>
+      <span class="tog middle"></span>
+      <span class="tog bottom"></span>
+    </label>
+    <nav class="slide-nav gutter-1-2">
+      <div class="pad-t-2 pad-b-2">
+        <ol class="list-group pad-t-2 pad-b-2">
+          <li class="push-2"><a class="exa relative" href="../index.html">Home</a></li>
+          <li class="push-2"><a class="exa relative" href="#project">Project</a></li>
+          <li class="push-2"><a class="exa relative" href="#">Contact</a></li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="banner relative">
+      <div class="banner-content-bg">
+      </div>
+      <div class="banner-content absolute w-1 island-1-2">
+        <h1 class="text-upper sans relative">Ottawa 67's</h1>
+        <p class="giga sans push-2 max-length">Team and group ticket sales campaign design.</p>
+      </div>
+    </div>
+  </main>
+  <footer class="mastfoot gutter-1-2 pad-t-2 pad-b-2 bg-333">
+    <small class="block text-center"><span class="sans">robillard</span><span class="sans bold">.design</span> is created by Adam Robillard</small>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+</body>
+</html>

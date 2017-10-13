@@ -130,6 +130,10 @@ h4,
   border-color: #1e1e49;
 }
 
+.contact .sec-intro {
+  border-color: #1e1e1e;
+}
+
 .work-preview .embed-item {
   transition: all 500ms ease-in-out;
 }
@@ -180,6 +184,42 @@ h4,
   transform: scale(1.2);
 }
 
+.contact-card {
+  background-color: #1e1e1e;
+}
+
+.contact-shot {
+  border: 5px solid #333;
+  border-radius: 1000000px;
+  width: 50%;
+}
+
+.contact-card a {
+  color: #fff;
+  text-decoration: none;
+  transform-origin: left bottom;
+}
+
+.contact-card a:hover {
+  transform: scale(1.05);
+}
+
+.contact-card .icon {
+  margin-right: 1rem;
+}
+
+/*.contact {
+  border-top: 10px solid #1e1e1e;
+  border-bottom: 10px solid #1e1e1e;
+  background-color: #1e1e1e;
+  color: #fff;
+}*/
+
+/*.contact .embed {
+  border: 5px solid #333;
+  border-radius: 1000000px
+}*/
+
 /* ----- =Footer ----- */
 
 .mastfoot {
@@ -223,6 +263,26 @@ h4,
 
 @media only screen and (min-width: 90em) {
 
+  .contact-card {
+    position: absolute;
+    width: 20em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -50%);
+    border: 5px solid #333;
+    border-radius: 10px;
+  }
 
+}
+
+@media only screen and (min-width: 120em) {
+
+  .contact-card {
+    top: auto;
+    bottom: 10rem;
+    left: auto;
+    right: 5rem;
+    transform: translate(0, 0);
+  }
 
 }

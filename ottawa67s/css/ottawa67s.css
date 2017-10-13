@@ -42,11 +42,10 @@
 }
 
 .rationale {
-  /*background: url("../images/rink-plays.svg") -7.5rem 1rem / 25rem auto no-repeat;*/
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),  url("../images/plays-rationale.svg");
+  /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),  url("../images/plays-rationale.svg");
   background-position: left top, center 2rem;
   background-size: cover,  auto 90%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 .scroll {
@@ -55,6 +54,27 @@
 
 figcaption {
   font-family: "Noto Sans", sans-serif;
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .9)), to(rgba(255, 255, 255, .9))), url("../images/rink-plays.svg");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url("../images/rink-plays.svg");
+    background-position: left top, -10rem -5rem;
+    background-size: cover, 80% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  figure .scroll {
+    overflow: visible;
+  }
+
+  figure .scroll img {
+    width: 100%;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {

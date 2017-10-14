@@ -41,11 +41,8 @@
   color: #ac212d;
 }
 
-.rationale {
-  /*background-image: linear-gradient(to bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),  url("../images/plays-rationale.svg");
-  background-position: left top, center 2rem;
-  background-size: cover,  auto 90%;
-  background-repeat: no-repeat;*/
+.invert {
+  filter: invert(1);
 }
 
 .scroll {
@@ -55,6 +52,17 @@
 figcaption {
   font-family: "Noto Sans", sans-serif;
 }
+
+.work-preview {
+  border-top: 20px solid #ac212d;
+}
+
+.work-preview a.embed-item,
+.work-preview .unit:nth-child(odd) a.embed-item,
+.work-preview .unit:nth-child(even) a.embed-item {
+  background-color: rgba(172, 33, 45, .9);
+}
+
 
 @media only screen and (min-width: 60em) {
 

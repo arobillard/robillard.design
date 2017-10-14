@@ -33,12 +33,21 @@
   background-color: rgba(0, 0, 0, .6);
 }
 
+.work-preview {
+  border-top: 20px solid #5e0d8b;
+}
+
+.work-preview a.embed-item,
+.work-preview .unit:nth-child(odd) a.embed-item,
+.work-preview .unit:nth-child(even) a.embed-item {
+  background-color: rgba(94, 13, 139, .9);
+}
 
 @media only screen and (min-width: 60em) {
 
   html {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url("../images/qc-logo.svg");
-    background-position: left top, 80% center;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url("../images/bball.svg");
+    background-position: left top, center center;
     background-size: cover, 50% auto;
     background-repeat: no-repeat;
     background-attachment: fixed;

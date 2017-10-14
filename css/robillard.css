@@ -119,6 +119,12 @@ input[type="checkbox"] + label::before {
   background-color: #fff;
 }
 
+/* ----- =Grid ----- */
+
+.xs-1-6 {
+  width: 16.6666%;
+}
+
 /* ----- =Spacing ----- */
 
 .embed-2by1 {
@@ -199,4 +205,37 @@ input[type="checkbox"] + label::before {
 
 .no-under {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  /* ----- =Grid ----- */
+
+  .s-1-6 {
+    width: 16.6666%;
+  }
+
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  /* ----- =Grid ----- */
+
+  .m-1-6 {
+    width: 16.6666%;
+  }
+
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  /* ----- =Grid ----- */
+
+  .l-1-6 {
+    width: 16.6666%;
+  }
+
+
 }

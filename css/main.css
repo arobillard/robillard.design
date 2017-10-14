@@ -127,6 +127,21 @@ h4,
   z-index: 1501;
 }
 
+.tog-arrow {
+  z-index: 10000000;
+}
+
+.tog-arrow .scale {
+  opacity: .75;
+  transition:
+    opacity 250ms linear,
+    transform 250ms ease-in-out;
+}
+
+.tog-arrow .scale:hover {
+  opacity: 1;
+}
+
 .banner-content {
   top: 50%;
   left: 50%;

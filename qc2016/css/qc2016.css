@@ -33,6 +33,16 @@
   background-color: rgba(0, 0, 0, .6);
 }
 
+.work-preview {
+  border-top: 20px solid #b21e28;
+}
+
+.work-preview a.embed-item,
+.work-preview .unit:nth-child(odd) a.embed-item,
+.work-preview .unit:nth-child(even) a.embed-item {
+  background-color: rgba(178, 30, 40, .9);
+}
+
 @media only screen and (min-width: 60em) {
 
   html {

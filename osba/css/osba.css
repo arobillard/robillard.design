@@ -1,15 +1,15 @@
 /* ----- =Colors ----- */
-.text-purple,
-.text-purple-hov:hover,
-.text-purple-hov:active,
-.text-purple-hov:focus {
+.text-local,
+.text-local-hov:hover,
+.text-local-hov:active,
+.text-local-hov:focus {
   color: #5e0d8b;
 }
 
-.bg-purple,
-.bg-purple-hov:hover,
-.bg-purple-hov:active,
-.bg-purple-hov:focus {
+.bg-local,
+.bg-local-hov:hover,
+.bg-local-hov:active,
+.bg-local-hov:focus {
   background-color: #5e0d8b;
 }
 
@@ -42,6 +42,34 @@
 .work-preview .unit:nth-child(even) a.embed-item {
   background-color: rgba(94, 13, 139, .9);
 }
+/*
+@media only screen and (min-width: 38em) {
+
+  .work-overlay {
+    z-index: 10000;
+    background-color: rgba(94, 13, 139, .9);
+    transition:
+      height 250ms ease-in-out;
+    overflow: hidden;
+    top: 10px;
+    left: 0;
+    height: calc(100% - 10px);
+  }
+
+  .work-overlay p {
+    transition:
+      opacity 250ms;
+  }
+
+  .work-overlay-shrink:hover .work-overlay {
+    height: 0;
+  }
+
+  .work-overlay-shrink:hover .work-overlay p {
+    opacity: 0;
+  }
+
+}*/
 
 @media only screen and (min-width: 60em) {
 

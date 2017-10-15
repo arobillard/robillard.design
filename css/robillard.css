@@ -10,7 +10,8 @@ button:focus,
 select:focus {
   outline: 0;
   outline-offset: 0;
-  box-shadow: 0 0 10px #491e1e;
+  -webkit-box-shadow: 0 0 10px #491e1e;
+          box-shadow: 0 0 10px #491e1e;
 }
 
 input[type="checkbox"] + label::before {
@@ -30,6 +31,10 @@ input[type="checkbox"] + label::before {
 .btn-banner {
   background-color: rgba(73, 30, 30, .9);
   border: none;
+  -webkit-transition:
+    background-color 250ms ease-in-out,
+    color 250ms ease-in-out,
+    border-color250m1s ease-in-out;
   transition:
     background-color 250ms ease-in-out,
     color 250ms ease-in-out,
@@ -155,7 +160,10 @@ input[type="checkbox"] + label::before {
   position: absolute;
   left: 0;
   border-radius: 5px;
+  -webkit-transition: opacity .5s, left .5s, top .5s, bottom .5s, -webkit-transform .5s;
+  transition: opacity .5s, left .5s, top .5s, bottom .5s, -webkit-transform .5s;
   transition: opacity .5s, transform .5s, left .5s, top .5s, bottom .5s;
+  transition: opacity .5s, transform .5s, left .5s, top .5s, bottom .5s, -webkit-transform .5s;
 }
 
 .top {
@@ -164,7 +172,8 @@ input[type="checkbox"] + label::before {
 
 .middle {
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .bottom {
@@ -174,19 +183,22 @@ input[type="checkbox"] + label::before {
 .nav-label-open .top {
   top: 50%;
   left: 50%;
-  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+          transform: translateY(-50%) translateX(-50%) rotate(45deg);
 }
 
 .nav-label-open .middle {
   opacity: 0;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
 
 .nav-label-open .bottom {
   bottom: 50%;
   left: 50%;
-  transform: translateY(50%) translateX(-50%) rotate(-45deg);
+  -webkit-transform: translateY(50%) translateX(-50%) rotate(-45deg);
+          transform: translateY(50%) translateX(-50%) rotate(-45deg);
 }
 
 .slide-nav {
@@ -197,6 +209,7 @@ input[type="checkbox"] + label::before {
   background-color: rgba(73, 30, 30, .9);
   z-index: 1000;
   overflow: hidden;
+  -webkit-transition: height .5s ease-in-out;
   transition: height .5s ease-in-out;
 }
 
@@ -206,6 +219,24 @@ input[type="checkbox"] + label::before {
 
 .nav-open {
   height: 100%;
+}
+
+/* ----- =Transitions ----- */
+
+.transition {
+  -webkit-transition:
+    all 250ms ease-in-out;
+  transition:
+    all 250ms ease-in-out;
+}
+
+.transition-b {
+  -webkit-transition:
+    border-color 250ms ease-in-out,
+    border-width 250ms ease-in-out;
+  transition:
+    border-color 250ms ease-in-out,
+    border-width 250ms ease-in-out;
 }
 
 /* ----- =Typography ----- */

@@ -133,9 +133,19 @@ h4,
 
 .tog-arrow .scale {
   opacity: .75;
+  -webkit-transition:
+    opacity 250ms linear,
+    -webkit-transform 250ms ease-in-out;
+  transition:
+    opacity 250ms linear,
+    -webkit-transform 250ms ease-in-out;
   transition:
     opacity 250ms linear,
     transform 250ms ease-in-out;
+  transition:
+    opacity 250ms linear,
+    transform 250ms ease-in-out,
+    -webkit-transform 250ms ease-in-out;
 }
 
 .tog-arrow .scale:hover {

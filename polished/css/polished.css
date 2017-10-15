@@ -36,6 +36,8 @@
 h2 + p a {
   color: #000;
   text-decoration: none;
+  -webkit-transition:
+    color 250ms linear;
   transition:
     color 250ms linear;
 }
@@ -46,7 +48,6 @@ h2 + p a:hover {
 
 .weblink {
   color: #393;
-  /*text-decoration: underline;*/
 }
 
 .img-flex {
@@ -67,6 +68,7 @@ h2 + p a:hover {
 @media only screen and (min-width: 60em) {
 
   html {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .9)), to(rgba(255, 255, 255, .9))), url("../images/bg-polished.svg");
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url("../images/bg-polished.svg");
     background-position: left top, center center;
     background-size: cover, 75% auto;

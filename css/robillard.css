@@ -18,6 +18,13 @@ input[type="checkbox"] + label::before {
   left: -1000rem;
 }
 
+/* ----- =Borders ----- */
+
+.b-b-1px,
+.b-b-1px-hov:hover {
+  border-bottom: 1px solid #fff;
+}
+
 /* ----- =Buttons ----- */
 
 .btn-banner {
@@ -205,6 +212,10 @@ input[type="checkbox"] + label::before {
 
 .no-under {
   text-decoration: none;
+}
+
+.under-hov {
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 25em) {

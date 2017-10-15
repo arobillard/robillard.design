@@ -1,16 +1,23 @@
 /* ----- =Colors ----- */
-.text-red,
-.text-red-hov:hover,
-.text-red-hov:active,
-.text-red-hov:focus {
+.text-local,
+.text-local-hov:hover,
+.text-local-hov:active,
+.text-local-hov:focus {
   color: rgb(172, 33, 45);
 }
 
-.bg-red,
-.bg-red-hov:hover,
-.bg-red-hov:active,
-.bg-red-hov:focus {
+.bg-local,
+.bg-local-hov:hover,
+.bg-local-hov:active,
+.bg-local-hov:focus {
   background-color: rgb(172, 33, 45);
+}
+
+/* ----- =Borders ----- */
+
+.b-local,
+.b-local-hov:hover {
+  border-color: rgb(172, 33, 45);
 }
 
 /* ----- =Masthead ----- */

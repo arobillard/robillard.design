@@ -71,6 +71,17 @@ figcaption {
   background-color: rgba(172, 33, 45, .9);
 }
 
+.cite-67s {
+  text-align: center;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .cite-67s {
+    text-align: right;
+  }
+
+}
 
 @media only screen and (min-width: 60em) {
 

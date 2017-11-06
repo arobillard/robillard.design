@@ -71,6 +71,18 @@
 
 }*/
 
+.work-preview p {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .work-preview p {
+    display: block;
+  }
+
+}
+
 @media only screen and (min-width: 60em) {
 
   html {

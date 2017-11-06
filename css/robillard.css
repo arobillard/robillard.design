@@ -279,5 +279,9 @@ input[type="checkbox"] + label::before {
     width: 16.6666%;
   }
 
+  .l-1-8 {
+    width: 12.5%;
+  }
+
 
 }

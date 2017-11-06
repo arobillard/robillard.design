@@ -75,12 +75,19 @@ figcaption {
   text-align: center;
 }
 
+.work-preview p {
+  display: none;
+}
+
 @media only screen and (min-width: 38em) {
+
+  .work-preview p {
+    display: block;
+  }
 
   .cite-67s {
     text-align: right;
   }
-
 }
 
 @media only screen and (min-width: 60em) {
@@ -104,7 +111,30 @@ figcaption {
 
 }
 
+@media only screen and (min-width: 70em) {
+
+  .ban-sky {
+    position: absolute;
+    left: 0;
+    transform: translateX(-30%);
+    top: 2rem;
+  }
+
+  .ban-sky figcaption {
+    font-size: 1rem;
+    width: 8rem;
+  }
+
+  .ban-sky figcaption span {
+    display: none;
+  }
+
+}
+
 @media only screen and (min-width: 90em) {
 
+  .ban-sky {
+    transform: translateX(-50%);
+  }
 
 }

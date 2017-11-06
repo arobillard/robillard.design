@@ -64,6 +64,17 @@ h2 + p a:hover {
   background-color: rgba(51, 153, 51, .9);
 }
 
+.work-preview p {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .work-preview p {
+    display: block;
+  }
+
+}
 
 @media only screen and (min-width: 60em) {
 

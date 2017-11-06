@@ -295,6 +295,7 @@ h4,
     background-color: rgba(73, 30, 30, .9);
   }
 
+  .work-preview .unit:nth-child(4) a.embed-item,
   .work-preview .unit:nth-child(5) a.embed-item,
   .work-preview .unit:nth-child(7) a.embed-item {
     background-color: rgba(30, 30, 73, .9);

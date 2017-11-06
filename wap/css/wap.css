@@ -1,0 +1,79 @@
+/* ----- =Colors ----- */
+.text-local,
+.text-local-hov:hover,
+.text-local-hov:active,
+.text-local-hov:focus {
+  color: #ee7323;
+}
+
+.bg-local,
+.bg-local-hov:hover,
+.bg-local-hov:active,
+.bg-local-hov:focus {
+  background-color: #ee7323;
+}
+
+/* ----- =Masthead ----- */
+
+.masthead {
+  background-color: rgba(238, 115, 35, .9);
+}
+
+.slide-nav {
+    background-color: rgba(238, 115, 35, .9);
+}
+
+/* ----- =Main ----- */
+
+.banner {
+  background: url("../images/banner.jpg") center bottom / cover no-repeat;
+}
+
+.banner-content-bg {
+  background-color: rgba(0, 0, 0, .6);
+}
+
+iframe {
+  width: 100vw;
+  height: 64.7vw;
+}
+
+.work-preview {
+  border-top: 20px solid #ee7323;
+}
+
+.work-preview a.embed-item,
+.work-preview .unit:nth-child(odd) a.embed-item,
+.work-preview .unit:nth-child(even) a.embed-item {
+  background-color: rgba(238, 115, 35, .9);
+}
+
+
+.work-preview p {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+
+  iframe {
+    width: 100%;
+    height: 23.2941em;
+  }
+
+  .work-preview p {
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url("../images/cujo-eyes.svg");
+    background-position: left top, center center;
+    background-size: cover, 75% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+}

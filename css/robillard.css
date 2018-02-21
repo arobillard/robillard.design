@@ -1,6 +1,6 @@
 /* ----- =Accesibility ----- */
 
-a:focus,
+/*a:focus,
 [tabindex="0"]:focus,
 details:focus,
 summary:focus,
@@ -17,7 +17,7 @@ select:focus {
 input[type="checkbox"] + label::before {
   position: absolute;
   left: -1000rem;
-}
+}*/
 
 /* ----- =Borders ----- */
 

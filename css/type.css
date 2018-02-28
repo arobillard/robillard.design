@@ -126,12 +126,12 @@ thead th {
 .wrapper {
   margin-left: auto;
   margin-right: auto;
-  max-width: 52em;
+  max-width: 60em;
   width: 100%;
 }
 
 .wrapper-no-center {
-  max-width: 52em;
+  max-width: 60em;
   width: 100%;
 }
 
@@ -221,6 +221,11 @@ h4,
 .giga {
   font-size: 1.5625rem;
   line-height: 2.275rem;
+}
+
+.masthead .mega {
+  font-size: 4.7684rem;
+  line-height: 6.5rem;
 }
 
 h5,
@@ -529,7 +534,8 @@ legend {
   }
 
   h5,
-  .mega {
+  .mega,
+  .masthead .mega {
     font-size: 1.333rem;
     line-height: 1.75rem;
   }
@@ -856,7 +862,8 @@ legend {
   }
 
   h5,
-  .mega {
+  .mega
+  .masthead .mega {
     font-size: 1.414rem;
     line-height: 1.875rem;
   }
@@ -1183,7 +1190,8 @@ legend {
   }
 
   h5,
-  .mega {
+  .mega
+  .masthead .mega {
     font-size: 1.414rem;
     line-height: 1.875rem;
   }

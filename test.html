@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Adam Robillard</title>
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/animation.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/test.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,700" rel="stylesheet">
+</head>
+<body>
+  <header class="masthead gutter-1-2">
+    <div class="wrapper pad-t-1-2 pad-b-1-2 gutter-1-2 grid grid-middle">
+      <div class="unit [ xs-3-4 m-1-2 ]">
+        <a class="font-light giga logo no-under" href="index.html"><span class="highlight-hover">adam</span><span class="highlight bold">robillard</span></a>
+      </div>
+      <div class="unit [ xs-1-4 m-0 ] text-right">
+        <div id="nav-tog" onclick="toggleNav(), toggleNavTog()" class="nav-label" tabindex="0">
+          <span class="tog top"></span>
+          <span class="tog middle"></span>
+          <span class="tog bottom"></span>
+        </div>
+      </div>
+      <nav class="unit [ m-1-2 ] nav-closed" id="slide-nav">
+        <ul class="list-group push-0">
+          <li><a class="island-1-2 block bold mega" href="#work" onclick="toggleNav(), toggleNavTog()">work</a></li>
+          <li><a class="island-1-2 block bold mega" href="#about" onclick="toggleNav(), toggleNavTog()">about</a></li>
+          <li><a class="island-1-2 block bold mega" href="#contact" onclick="toggleNav(), toggleNavTog()">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <header class="banner push-2">
+      <input id="slide-input-1" class="slide-input-1" type="radio" name="banner-slide-inputs" checked>
+      <input id="slide-input-2" class="slide-input-2" type="radio" name="banner-slide-inputs">
+      <input id="slide-input-3" class="slide-input-3" type="radio" name="banner-slide-inputs">
+      <input id="slide-input-4" class="slide-input-4" type="radio" name="banner-slide-inputs">
+      <div class="banner-slides grid grid-stretch">
+        <div class="unit [ xs-1-4 ] slide-1">
+          <div class="embed embed-16by9">
+            <video class="embed-item" src="videos/goal-graphic.mp4" poster="#" loop muted autoplay>
+
+            </video>
+          </div>
+        </div>
+        <div class="unit [ xs-1-4 ] slide-2">
+
+        </div>
+        <div class="unit [ xs-1-4 ] slide-3">
+
+        </div>
+        <div class="unit [ xs-1-4 ] slide-4">
+
+        </div>
+      </div>
+      <div class="slide-labels island absolute pin-bc w-1 text-center">
+        <label class="slide-label-1" for="slide-input-1"></label>
+        <label class="slide-label-2" for="slide-input-2"></label>
+        <label class="slide-label-3" for="slide-input-3"></label>
+        <label class="slide-label-4" for="slide-input-4"></label>
+        <div class="slide-indicator"></div>
+      </div>
+    </header>
+
+    <a class="unit [ xs-1 m-1-2 ] island-1-2 block relative" href="#">
+
+      <div class="embed embed-16by9">
+        <img class="embed-item" src="images/preview-fancon.jpg" alt="">
+        <div class="embed-item embed-overlay"></div>
+      </div>
+      <div class="absolute pin-bl w-1 island-1-2">
+        <!-- <p class="hover text-secondary bg-fff-1-2 bold island-1-2 push-0">event branding</p> -->
+        <h3 class="gutter-1-2 push-0">fancon</h3>
+      </div>
+    </a>
+
+    <div class="embed embed-16by9">
+      <video class="embed-item" src="videos/goal-graphic.mp4" poster="#" loop muted autoplay>
+
+      </video>
+    </div>
+  </main>
+
+  <header class="banner push-2">
+    <input id="slide-input-1" class="slide-input-1" type="radio" name="banner-slide-inputs" checked>
+    <input id="slide-input-2" class="slide-input-2" type="radio" name="banner-slide-inputs">
+    <input id="slide-input-3" class="slide-input-3" type="radio" name="banner-slide-inputs">
+    <input id="slide-input-4" class="slide-input-4" type="radio" name="banner-slide-inputs">
+    <div class="banner-slides grid grid-stretch">
+      <div class="unit [ xs-1-4 ] slide-1 relative gutter-1-2">
+        <div class="slide-1-content pad-t gutter-1-2 wrapper">
+          <h1 class="tera text-fff push-0">Ottawa RedBlacks</h1>
+          <p class="text-fff giga">Photoshop collage assignment</p>
+          <a class="btn btn-ghost-white mega" href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="unit [ xs-1-4 ] slide-2 relative gutter-1-2">
+        <div class="slide-1-content pad-t gutter-1-2 wrapper">
+          <p class="bold tera push-0">Ottawa 67's</p>
+          <p class="giga">Ticket campaign assignment</p>
+          <a class="btn btn-ghost mega" href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="unit [ xs-1-4 ] slide-3 relative gutter-1-2">
+        <div class="slide-1-content pad-t gutter-1-2 wrapper">
+          <p class="bold tera text-fff push-0">Space Exploration</p>
+          <p class="text-fff giga">3<span class="text-upper">D</span> layers motion assignment</p>
+          <a class="btn btn-ghost-white mega" href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="unit [ xs-1-4 ] slide-4 relative gutter-1-2">
+
+      </div>
+    </div>
+    <div class="slide-labels island absolute pin-bc w-1 text-center">
+      <label class="slide-label-1" for="slide-input-1"></label>
+      <label class="slide-label-2" for="slide-input-2"></label>
+      <label class="slide-label-3" for="slide-input-3"></label>
+      <label class="slide-label-4" for="slide-input-4"></label>
+      <div class="slide-indicator"></div>
+    </div>
+  </header>
+</body>
+</html>

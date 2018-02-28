@@ -1,0 +1,407 @@
+@keyframes bannerSlidesOne {
+
+  0% {
+    left: 0;
+  }
+
+  14.8148% {
+    left: 0;
+  }
+
+  18.5185% {
+    left: -100vw;
+  }
+
+  48.1481% {
+    left: -100vw;
+  }
+
+  51.8519% {
+    left: -200vw;
+  }
+
+  81.4815% {
+    left: -200vw;
+  }
+
+  85.1852% {
+    left: -300vw;
+  }
+
+  100% {
+    left: -300vw;
+  }
+
+}
+
+@keyframes bannerSlidesTwo {
+
+  0% {
+    left: 0;
+  }
+
+  14.8148% {
+    left: 0;
+  }
+
+  18.5185% {
+    left: -100vw;
+  }
+
+  48.1481% {
+    left: -100vw;
+  }
+
+  51.8519% {
+    left: -200vw;
+  }
+
+  81.4815% {
+    left: -200vw;
+  }
+
+  85.1852% {
+    left: -300vw;
+  }
+
+  100% {
+    left: -300vw;
+  }
+
+}
+
+@keyframes bannerSlidesThree {
+
+  0% {
+    left: 0;
+  }
+
+  14.8148% {
+    left: 0;
+  }
+
+  18.5185% {
+    left: -100vw;
+  }
+
+  48.1481% {
+    left: -100vw;
+  }
+
+  51.8519% {
+    left: -200vw;
+  }
+
+  81.4815% {
+    left: -200vw;
+  }
+
+  85.1852% {
+    left: -300vw;
+  }
+
+  100% {
+    left: -300vw;
+  }
+
+}
+
+@keyframes bannerSlidesFour {
+
+  0% {
+    left: 0;
+  }
+
+  14.8148% {
+    left: 0;
+  }
+
+  18.5185% {
+    left: -100vw;
+  }
+
+  48.1481% {
+    left: -100vw;
+  }
+
+  51.8519% {
+    left: -200vw;
+  }
+
+  81.4815% {
+    left: -200vw;
+  }
+
+  85.1852% {
+    left: -300vw;
+  }
+
+  100% {
+    left: -300vw;
+  }
+
+}
+
+@keyframes bannerSlidesIndicator1 {
+
+  0% {
+    transform: translate(-455%, -38%);
+  }
+
+  14.81% {
+    opacity: 1;
+  }
+
+  14.8148% {
+    transform: translate(-455%, -38%);
+    opacity: 0;
+  }
+
+  18.51% {
+    opacity: 0;
+  }
+
+  18.5185% {
+    transform: translate(-186%, -38%);
+    opacity: 1;
+  }
+
+  48.13% {
+    opacity: 1;
+  }
+
+  48.1481% {
+    transform: translate(-186%, -38%);
+    opacity: 0;
+  }
+
+  51.85% {
+    opacity: 0;
+  }
+
+  51.8519% {
+    transform: translate(86%, -38%);
+    opacity: 1;
+  }
+
+  81.45% {
+    opacity: 1;
+  }
+
+  81.4815% {
+    transform: translate(86%, -38%);
+    opacity: 0;
+  }
+
+  85.17% {
+    opacity: 0;
+  }
+
+  85.1852% {
+    transform: translate(357%, -38%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(357%, -38%);
+  }
+
+}
+
+@keyframes bannerSlidesIndicator2 {
+
+  0% {
+    transform: translate(-455%, -38%);
+  }
+
+  14.81% {
+    opacity: 1;
+  }
+
+  14.8148% {
+    transform: translate(-455%, -38%);
+    opacity: 0;
+  }
+
+  18.51% {
+    opacity: 0;
+  }
+
+  18.5185% {
+    transform: translate(-186%, -38%);
+    opacity: 1;
+  }
+
+  48.13% {
+    opacity: 1;
+  }
+
+  48.1481% {
+    transform: translate(-186%, -38%);
+    opacity: 0;
+  }
+
+  51.85% {
+    opacity: 0;
+  }
+
+  51.8519% {
+    transform: translate(86%, -38%);
+    opacity: 1;
+  }
+
+  81.45% {
+    opacity: 1;
+  }
+
+  81.4815% {
+    transform: translate(86%, -38%);
+    opacity: 0;
+  }
+
+  85.17% {
+    opacity: 0;
+  }
+
+  85.1852% {
+    transform: translate(357%, -38%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(357%, -38%);
+  }
+
+}
+
+@keyframes bannerSlidesIndicator3 {
+
+  0% {
+    transform: translate(-455%, -38%);
+  }
+
+  14.81% {
+    opacity: 1;
+  }
+
+  14.8148% {
+    transform: translate(-455%, -38%);
+    opacity: 0;
+  }
+
+  18.51% {
+    opacity: 0;
+  }
+
+  18.5185% {
+    transform: translate(-186%, -38%);
+    opacity: 1;
+  }
+
+  48.13% {
+    opacity: 1;
+  }
+
+  48.1481% {
+    transform: translate(-186%, -38%);
+    opacity: 0;
+  }
+
+  51.85% {
+    opacity: 0;
+  }
+
+  51.8519% {
+    transform: translate(86%, -38%);
+    opacity: 1;
+  }
+
+  81.45% {
+    opacity: 1;
+  }
+
+  81.4815% {
+    transform: translate(86%, -38%);
+    opacity: 0;
+  }
+
+  85.17% {
+    opacity: 0;
+  }
+
+  85.1852% {
+    transform: translate(357%, -38%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(357%, -38%);
+  }
+
+}
+
+@keyframes bannerSlidesIndicator4 {
+
+  0% {
+    transform: translate(-455%, -38%);
+  }
+
+  14.81% {
+    opacity: 1;
+  }
+
+  14.8148% {
+    transform: translate(-455%, -38%);
+    opacity: 0;
+  }
+
+  18.51% {
+    opacity: 0;
+  }
+
+  18.5185% {
+    transform: translate(-186%, -38%);
+    opacity: 1;
+  }
+
+  48.13% {
+    opacity: 1;
+  }
+
+  48.1481% {
+    transform: translate(-186%, -38%);
+    opacity: 0;
+  }
+
+  51.85% {
+    opacity: 0;
+  }
+
+  51.8519% {
+    transform: translate(86%, -38%);
+    opacity: 1;
+  }
+
+  81.45% {
+    opacity: 1;
+  }
+
+  81.4815% {
+    transform: translate(86%, -38%);
+    opacity: 0;
+  }
+
+  85.17% {
+    opacity: 0;
+  }
+
+  85.1852% {
+    transform: translate(357%, -38%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(357%, -38%);
+  }
+
+}

@@ -301,6 +301,15 @@ nav a {
   z-index: 100000;
 }
 
+.banner ol li a {
+  color: #fff;
+}
+
+.banner ol li a:hover {
+  color: #fff;
+  /* text-decoration: none; */
+}
+
 .work-preview .unit {
   transition: background-color .25s;
 }
@@ -361,6 +370,10 @@ nav a {
 .portfolio-nav ul {
   border-bottom: 2px solid var(--color-secondary);
 } */
+
+.inter-page-nav-current {
+  text-decoration: underline;
+}
 
 ol {
   padding-left: .975rem;

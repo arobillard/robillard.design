@@ -332,8 +332,26 @@ nav a {
   color: var(--color-primary);
 }
 
-.cv {
-  font-size: 2rem;
+.email-link:hover {
+  text-decoration: none;
+}
+
+.email-link:hover .icon-label {
+  text-decoration: underline;
+}
+
+.client-logos .unit img {
+  transition:
+    filter .25s,
+    opacity .5s;
+}
+
+.client-logos:hover .unit img {
+  opacity: .5;
+}
+
+.client-logos .unit:hover img {
+  opacity: 1;
 }
 
 .footer {
@@ -349,20 +367,6 @@ nav a {
 .footer a.no-under:active,
 .footer a.no-under:focus {
   color: var(--color-primary)
-}
-
-.client-logos .unit img {
-  transition:
-    filter .25s,
-    opacity .5s;
-}
-
-.client-logos:hover .unit img {
-  opacity: .5;
-}
-
-.client-logos .unit:hover img {
-  opacity: 1;
 }
 
 /* --------------- =Portfolio Pages --------------- */

@@ -13,7 +13,6 @@
 html {
   font-family: var(--font-primary);
   color: var(--color-secondary);
-  /* text-transform: lowercase; */
   background-color: #f2f2f2;
 }
 
@@ -167,7 +166,6 @@ a.no-under:focus {
 .logo:hover .highlight,
 .logo:focus .highlight,
 .logo:active .highlight {
-  /* background-color: #fff; */
   color: var(--color-primary);
   font-weight: 300;
 }
@@ -307,7 +305,6 @@ nav a {
 
 .banner ol li a:hover {
   color: #fff;
-  /* text-decoration: none; */
 }
 
 .work-preview .unit {
@@ -370,10 +367,6 @@ nav a {
 }
 
 /* --------------- =Portfolio Pages --------------- */
-/*
-.portfolio-nav ul {
-  border-bottom: 2px solid var(--color-secondary);
-} */
 
 .inter-page-nav-current {
   text-decoration: underline;

@@ -12,12 +12,12 @@ $(document).ready(function(){
   });
 });
 
-function toggleNav() {
-  document.getElementById("nav").classList.toggle("nav-closed");
-  document.getElementById("nav").classList.toggle("nav-open");
-};
+$('.nav-label').on('click', function () {
+  $(this).toggleClass('nav-label-open');
+  $('nav').toggleClass('nav-open');
+});
 
-function toggleNavTog() {
-  document.getElementById("nav-tog").classList.toggle("nav-labal-closed");
-  document.getElementById("nav-tog").classList.toggle("nav-label-open");
-};
+$('nav a').on('click', function () {
+  $(".nav-label").removeClass('nav-label-open');
+  $('nav').removeClass('nav-open');
+});

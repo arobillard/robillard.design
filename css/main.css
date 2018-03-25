@@ -213,6 +213,19 @@ a.no-under:focus {
   position: relative;
   z-index: 1100;
   display: inline-block;
+  background-color: transparent;
+  border: none;
+  border-radius: none;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.nav-label:hover,
+.nav-label:focus,
+.nav-label:active {
+  background-color: transparent;
+  border: none;
+  border-radius: none;
 }
 
 .tog {
@@ -221,8 +234,11 @@ a.no-under:focus {
   height: 3px;
   position: absolute;
   left: 0;
-  border-radius: 5px;
-  transition: opacity .5s, transform .5s, left .5s, top .5s, bottom .5s;
+  transition:
+    transform .25s,
+    left .25s,
+    top .25s,
+    bottom .25s;
 }
 
 .top {
@@ -241,22 +257,22 @@ a.no-under:focus {
 .nav-label-open .top {
   top: 50%;
   left: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg);
-          transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .nav-label-open .middle {
   opacity: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-          transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .nav-label-open .bottom {
   bottom: 50%;
   left: 50%;
-  -webkit-transform: translateY(50%) translateX(-50%) rotate(-45deg);
-          transform: translateY(50%) translateX(-50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, 50%) rotate(-45deg);
+          transform: translate(-50%, 50%) rotate(-45deg);
 }
 
 nav {
@@ -268,10 +284,7 @@ nav {
   transition: left .5s ease-in-out;
   padding-top: .65rem;
   text-align: center;
-}
-
-.nav-closed {
-  left: -150vw;
+  left: -150vw
 }
 
 .nav-open {
@@ -367,15 +380,22 @@ nav a {
 }
 
 /* --------------- =Portfolio Pages --------------- */
+/* 
+.case-study h2 {
+  border-bottom: none;
+  text-transform: none;
+} */
 
 .inter-page-nav-current {
   text-decoration: underline;
 }
 
+.feature-list,
 ol {
   padding-left: .975rem;
 }
 
+.feature-list li::before,
 ol li::before {
   font-weight: bold;
   color: var(--color-primary);

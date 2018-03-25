@@ -24,16 +24,16 @@
         <a class="font-light giga logo no-under" href="index.html"><span class="highlight-hover">adam</span><span class="highlight bold">robillard</span></a>
       </div>
       <div class="unit [ xs-1-4 m-0 ] text-right">
-        <div id="nav-tog" onclick="toggleNav(), toggleNavTog()" class="nav-label" tabindex="0">
+        <a href="#footer-nav" id="nav-tog" class="nav-label" tabindex="0">
           <span class="tog top"></span>
           <span class="tog middle"></span>
           <span class="tog bottom"></span>
-        </div>
+        </a>
       </div>
       <nav class="unit [ m-1-2 ] nav-closed" id="nav" role="navigation" tabindex="0">
         <ul class="list-group push-0">
-          <li><a class="island-1-2 block bold mega" href="/#work" onclick="toggleNav(), toggleNavTog()">work</a></li>
-          <li><a class="island-1-2 block bold mega" href="/#about" onclick="toggleNav(), toggleNavTog()">about</a></li>
+          <li><a class="island-1-2 block bold mega" href="/#work">work</a></li>
+          <li><a class="island-1-2 block bold mega" href="/#about">about</a></li>
           <li><a class="island-1-2 block bold mega" href="mailto:robi0653@algonquinlive.com">contact</a></li>
         </ul>
       </nav>
@@ -51,13 +51,37 @@
       </div>
     </div>
     <section class="portfolio-nav pad-t-2 gutter-1-2">
-      <div class="wrapper pad-t-2 gutter-1-2">
-        <h1 class="push-1-2">Branding</h1>
+      <div class="wrapper pad-t-2">
+        <h1 class="push-1-2 gutter-1-2">Branding</h1>
         <ul class="list-group-inline smooth-scroll">
-          <li class="push-1-2"><a href="#fancon">FanCon Ottawa</a></li>
+          <!-- <li class="push-1-2 gutter-1-2"><a href="#amces">AMCES</a></li> -->
+          <li class="push-1-2 gutter-1-2"><a href="#fancon">FanCon Ottawa</a></li>
         </ul>
       </div>
     </section>
+    <!-- <section id="amces" class="pad-t-2 pad-b-2 gutter-1-2">
+      <div class="wrapper pad-t-2">
+        <div class="gutter-1-2">
+          <h2 class="push-2">AMCES</h2>
+        </div>
+        <div class="grid">
+          <div class="unit [ xs-1 ] island-1-2">
+            <div class="embed embed-16by9">
+              <img class="embed-item" src="images/branding/amces-stationery.jpg" aria-details="#fancon-newspaper-desc" alt="">
+            </div>
+          </div>
+          <div class="unit [ xs-1 m-1-2 ] island-1-2">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="images/branding/amces-trade-show.jpg" aria-details="#fancon-bus-stop-desc" alt="">
+            </div>
+          </div>
+          <div class="unit [ xs-1 m-1-2 ] island-1-2">
+            <p>Logo rebrand for AMCES, an association management company in Ottawa. The goal of the rebrand was to modernize the brand to reflect the company's professional, forward thinking business practices.</p>
+            <a class="inline-block" href="amces.html">View case study.</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
     <section id="fancon" class="pad-t-2 pad-b-2 gutter-1-2">
       <div class="wrapper pad-t-2">
         <div class="gutter-1-2">
@@ -140,7 +164,7 @@
         </a>
       </div>
       <div class="block unit [ xs-1 m-1-2 ] unit-pull-m-1-2 push">
-        <ul class="list-group-inline push-0">
+        <ul id="footer-nav" class="list-group-inline push-0">
           <li><a href="/#work">work</a></li>
           <li class="gutter"><a href="/#about">about</a></li>
           <li><a href="mailto:robi0653@algonquinlive.com">contact</a></li>
@@ -148,7 +172,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

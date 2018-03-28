@@ -22,3 +22,17 @@ $('nav a').on('click', function () {
   $(".nav-label").removeClass('nav-label-open');
   $('nav').removeClass('nav-open');
 });
+
+$(".skip-scroll").on('click', function() {
+    $('html, body').animate({
+        scrollTop: $("#main").offset().top
+    }, 500);
+});
+
+$(".client-logos a").focus(function () {
+  $(this).siblings().addClass('hover-fade');
+});
+
+$(".client-logos a").focusout(function () {
+  $('.client-logos a').removeClass('hover-fade');
+});

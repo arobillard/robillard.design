@@ -15,9 +15,28 @@
 </head>
 <body>
   <ul class="skip-links">
-    <li><a href="#work">Jump to main content</a></li>
-    <li><a href="#nav">Jump to navigation</a></li>
+    <li class="smooth-scroll"><a href="#work">Jump to main content</a></li>
+    <li><a class="skip-scroll" href="#nav">Jump to navigation</a></li>
   </ul>
+  <div class="banner relative">
+    <div class="slide-1-content pad-t gutter-1-2 wrapper absolute pin-c">
+      <h1 class="peta text-fff not-bold">adam<span class="highlight bold">robillard</span></h1>
+      <ol class="text-fff mega list-group-inline">
+        <li><a href="web-ui.html">Web</a></li>
+        <li class="gutter-1-4">/</li>
+        <li><a href="branding.html">Branding</a></li>
+        <li class="gutter-1-4">/</li>
+        <li><a href="motion.html">Motion</a></li>
+      </ol>
+    </div>
+    <div class="absolute block pin-cb island-1-2 smooth-scroll">
+      <a class="island-1-2 tog-arrow block" href="#work">
+        <i class="scale icon i-3rem">
+          <img src="images/down-arrow.svg" alt="">
+        </i>
+      </a>
+    </div>
+  </div>
   <header class="masthead gutter-1-2" role="banner">
     <div class="wrapper pad-t-1-2 pad-b-1-2 gutter-1-2 grid grid-middle">
       <div class="unit [ xs-3-4 m-1-2 ]">
@@ -30,9 +49,9 @@
           <span class="tog bottom"></span>
         </a>
       </div>
-      <nav class="unit [ m-1-2 ] nav-closed" id="nav" role="navigation">
+      <nav class="unit [ m-1-2 ] nav-closed" role="navigation">
         <ul class="list-group push-0 smooth-scroll">
-          <li><a class="island-1-2 block bold mega" href="#work">work</a></li>
+          <li><a id="nav" class="island-1-2 block bold mega" href="#work">work</a></li>
           <li><a class="island-1-2 block bold mega" href="#about">about</a></li>
           <li><a class="island-1-2 block bold mega" href="mailto:robi0653@algonquinlive.com">contact</a></li>
         </ul>
@@ -40,25 +59,6 @@
     </div>
   </header>
   <main id="main" role="main">
-    <header class="banner relative">
-      <div class="slide-1-content pad-t gutter-1-2 wrapper absolute pin-c">
-        <h1 class="peta text-fff not-bold">adam<span class="highlight bold">robillard</span></h1>
-        <ol class="text-fff mega list-group-inline">
-          <li><a href="web-ui.html">Web</a></li>
-          <li class="gutter-1-4">/</li>
-          <li><a href="branding.html">Branding</a></li>
-          <li class="gutter-1-4">/</li>
-          <li><a href="motion.html">Motion</a></li>
-        </ol>
-      </div>
-      <div class="absolute block pin-cb island-1-2 smooth-scroll">
-        <a class="island-1-2 tog-arrow block" href="#work">
-          <i class="scale icon i-3rem">
-            <img src="images/down-arrow.svg" alt="">
-          </i>
-        </a>
-      </div>
-    </header>
     <section id="work" class="pad-t-2 gutter-1-2">
       <div class="wrapper pad-t-2">
         <div class="gutter-1-2">
@@ -97,7 +97,7 @@
         <div class="gutter-1-2">
           <h2><span class="highlight bold">about</span>me</h2>
         </div>
-        <div class="grid grid-stretch push-2">
+        <div class="grid grid-stretch push-2" tabindex="0">
           <div class="unit [ xs-1 m-1-3 l-1-2 ] island-1-2">
             <div class="embed embed-4by5">
               <img class="embed-item" src="images/adam-headshot.jpg" alt="Headshot of Adam Robillard">
@@ -153,68 +153,52 @@
         </div>
         <h3 class="pad-t-2 gutter-1-2 push-0">Clients</h3>
         <div class="grid pad-b-2 client-logos">
-          <div class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b">
-            <a href="http://www.algonquincollege.com/mediaanddesign/program/graphic-design/" target="_blank">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/logos/ac-logo.svg" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b">
-            <a href="http://amces.com/" target="_blank">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/logos/amces-logo.svg" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b">
-            <a href="https://www.comp-ocpm.ca/" target="_blank">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/logos/comp.svg" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b">
-            <a href="https://www.icsacanada.org/" target="_blank">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/logos/icsa.svg" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b">
-            <a href="https://www.opcanada.ca/" target="_blank">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/logos/opc.svg" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b">
-            <a href="http://www.ottawasouthbasketball.ca/" target="_blank">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/logos/osba.svg" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b">
-            <a href="http://quidditchcanada.com/" target="_blank">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/logos/quid-can.svg" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b">
-            <a href="https://www.facebook.com/ValhallaQuidditch/" target="_blank">
-              <div class="embed embed-1by1">
-                <img class="embed-item" src="images/logos/valfreyja.svg" alt="">
-              </div>
-            </a>
-          </div>
+          <a class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b block" href="http://www.algonquincollege.com/mediaanddesign/program/graphic-design/" target="_blank">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="images/logos/ac-logo.svg" alt="">
+            </div>
+          </a>
+          <a class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b block" href="http://amces.com/" target="_blank">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="images/logos/amces-logo.svg" alt="">
+            </div>
+          </a>
+          <a class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b block" href="https://www.comp-ocpm.ca/" target="_blank">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="images/logos/comp.svg" alt="">
+            </div>
+          </a>
+          <a class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b block" href="https://www.icsacanada.org/" target="_blank">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="images/logos/icsa.svg" alt="">
+            </div>
+          </a>
+          <a class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b block" href="https://www.opcanada.ca/" target="_blank">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="images/logos/opc.svg" alt="">
+            </div>
+          </a>
+          <a class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b block" href="http://www.ottawasouthbasketball.ca/" target="_blank">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="images/logos/osba.svg" alt="">
+            </div>
+          </a>
+          <a class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b block" href="http://quidditchcanada.com/" target="_blank">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="images/logos/quid-can.svg" alt="">
+            </div>
+          </a>
+          <a class="unit [ xs-1-2 m-1-4 ] gutter-2 pad-t pad-b block" href="https://www.facebook.com/ValhallaQuidditch/" target="_blank">
+            <div class="embed embed-1by1">
+              <img class="embed-item" src="images/logos/valfreyja.svg" alt="">
+            </div>
+          </a>
         </div>
       </div>
     </section>
     <div class="wrapper relative">
       <div class="pad-b-2 absolute pin-br gutter smooth-scroll">
-        <a href="#work">Back to top</a>
+        <a href="#main">Back to top</a>
       </div>
     </div>
   </main>

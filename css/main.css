@@ -4,6 +4,7 @@
   --color-primary-1-2: rgba(153, 85, 85, .5);
   --color-primary-85: rgba(153, 85, 85, .85);
   --color-secondary: #555;
+  --color-secondary-95: rgba(85, 85, 85, .95);
   --color-secondary-dark: #333;
   --color-secondary-light: #aaa;
   --color-secondary-light-1-2: rgba(170, 170, 170, .5);
@@ -280,7 +281,7 @@ nav {
   width: 100%;
   height: calc(100vh - 3.5488rem);
   top: 3.5488rem;
-  background-color: var(--color-primary-85);
+  background-color: var(--color-secondary-95);
   transition: left .5s ease-in-out;
   padding-top: .65rem;
   text-align: center;
@@ -360,8 +361,14 @@ nav a {
   opacity: .5;
 }
 
-.client-logos .unit:hover img {
+.client-logos .unit:hover img,
+.client-logos .unit:active img,
+.client-logos .unit:focus img {
   opacity: 1;
+}
+
+.hover-fade img {
+  opacity: .5;
 }
 
 .footer {

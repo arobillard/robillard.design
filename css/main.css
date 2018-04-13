@@ -343,6 +343,10 @@ nav a {
   color: var(--color-primary);
 }
 
+.work-preview .embed {
+  background-color: var(--color-secondary-light);
+}
+
 .email-link:hover {
   text-decoration: none;
 }

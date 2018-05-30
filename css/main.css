@@ -321,6 +321,32 @@ nav a {
   color: #fff;
 }
 
+.banner-landing {
+  height: 100vh;
+  background:
+    linear-gradient(to top, rgba(85, 85, 85, .75), rgba(85, 85, 85, .75)) top left / cover no-repeat,
+    url("../images/quidcan/banner-jersey.jpg") 20% bottom / cover no-repeat;
+  display: flex;
+  align-items: stretch;
+}
+
+.banner-landing .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-landing-content {
+  /* width: 50%;
+  margin-left: 50%; */
+  color: #fff;
+  text-align: center;
+}
+
+.banner-landing-content h1 {
+  text-transform: none;
+}
+
 .work-preview .unit {
   transition: background-color .25s;
 }
@@ -512,5 +538,20 @@ ol li::before {
   ol {
     padding-left: 1.125rem;
   }
+
+  .banner-landing .wrapper {
+    justify-content: flex-end;
+  }
+
+  .banner-landing-content {
+    width: 50%;
+    margin-left: 50%;
+    color: #fff;
+    text-align: left;
+  }
+
+  .banner-landing {
+    background: url("../images/quidcan/banner-jersey.jpg") center bottom / cover no-repeat;
+    }
 
 }

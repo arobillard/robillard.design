@@ -8,6 +8,7 @@
   --color-secondary-dark: #333;
   --color-secondary-light: #aaa;
   --color-secondary-light-1-2: rgba(170, 170, 170, .5);
+  --color-secondary-light-3-4: rgba(170, 170, 170, .75);
   --font-primary: "Titillium Web", sans-serif;
 }
 
@@ -58,6 +59,14 @@ h2 .highlight::before {
 
 .shift-up {
   margin-top: -1rem;
+}
+
+.btn-grid-form {
+  /* display: flex; */
+  text-align: center;
+  /* background-color: #fff;
+  color: var(--color-primary); */
+  width: 100%;
 }
 
 /* ----- =Type ----- */
@@ -323,6 +332,7 @@ nav a {
 
 .banner-landing {
   height: 100vh;
+  max-height: 800px;
   background:
     linear-gradient(to top, rgba(85, 85, 85, .75), rgba(85, 85, 85, .75)) top left / cover no-repeat,
     url("../images/quidcan/banner-jersey.jpg") 20% bottom / cover no-repeat;
@@ -445,7 +455,7 @@ ol li::before {
   position: absolute;
   bottom: .75rem;
   right: .75rem;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .75);
   border-radius: 50%;
   color: var(--color-secondary);
   height: 1.5rem;
@@ -469,7 +479,23 @@ ol li::before {
 
 .item-number-dark {
   color: #fff;
-  background-color: var(--color-secondary-light-1-2);
+  background-color: var(--color-secondary-light-3-4);
+}
+
+.unit-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 66.6667%;
+}
+
+.unit-bg-form {
+  background-image: url("../images/quidcan/suraj-7.jpg")
+}
+
+.unit-bg-form + .unit {
+  background-color: #fff;
+  padding: 1.3rem 0;
 }
 
 @media only screen and (min-width: 38em) {
@@ -523,6 +549,14 @@ ol li::before {
     padding-left: 1.05rem;
   }
 
+  .unit-bg {
+    padding-top: 0;
+  }
+
+  .unit-bg-form + .unit {
+    padding: 3rem 0;
+  }
+
   .footer {
     text-align: left;
   }
@@ -551,7 +585,12 @@ ol li::before {
   }
 
   .banner-landing {
-    background: url("../images/quidcan/banner-jersey.jpg") center bottom / cover no-repeat;
+    background: url("../images/quidcan/banner-jersey.jpg") center / cover no-repeat;
     }
+
+
+  .unit-bg-form + .unit {
+    padding: 3rem;
+  }
 
 }

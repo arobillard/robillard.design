@@ -443,7 +443,7 @@ fieldset {
   padding: .325rem 0;
 
   border: 0;
-  border-top: 2px solid #000;
+  /* border-top: 2px solid #000; */
 }
 
 legend {
@@ -769,7 +769,7 @@ legend {
     padding: .35rem 0;
 
     border: 0;
-    border-top: 2px solid #000;
+    /* border-top: 2px solid #000; */
   }
 
   legend {
@@ -1097,7 +1097,7 @@ legend {
     padding: .375rem 0;
 
     border: 0;
-    border-top: 2px solid #000;
+    /* border-top: 2px solid #000; */
   }
 
   legend {
@@ -1425,7 +1425,7 @@ legend {
     padding: .375rem 0;
 
     border: 0;
-    border-top: 2px solid #000;
+    /* border-top: 2px solid #000; */
   }
 
   legend {

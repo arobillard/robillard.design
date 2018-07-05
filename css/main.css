@@ -51,7 +51,6 @@ h2 .highlight::before {
   height: 2.8rem;
 }
 
-
 .masthead .highlight::before {
   height: 1.96rem;
   transform: translate(-50%, -50%);
@@ -335,7 +334,7 @@ nav a {
   max-height: 800px;
   background:
     linear-gradient(to top, rgba(85, 85, 85, .75), rgba(85, 85, 85, .75)) top left / cover no-repeat,
-    url("../images/quidcan/banner-jersey.jpg") 20% bottom / cover no-repeat;
+    url("../images/quidcan/suraj-2.jpg") 20% bottom / cover no-repeat;
   display: flex;
   align-items: stretch;
 }
@@ -355,6 +354,10 @@ nav a {
 
 .banner-landing-content h1 {
   text-transform: none;
+}
+
+.banner-landing-content .smooth-scroll .unit:first-child {
+  margin-bottom: 1.3rem;
 }
 
 .work-preview .unit {
@@ -500,6 +503,14 @@ ol li::before {
 
 @media only screen and (min-width: 38em) {
 
+  .m-pad-l-1-2 {
+    padding-left: .7rem;
+  }
+
+  .m-pad-r-1-2 {
+    padding-right: .7rem;
+  }
+
   h1 .highlight::before,
   h2 .highlight::before {
     height: 3.61846rem;
@@ -549,6 +560,11 @@ ol li::before {
     padding-left: 1.05rem;
   }
 
+
+  .banner-landing-content .smooth-scroll .unit:first-child {
+    margin-bottom: 0;
+  }
+
   .unit-bg {
     padding-top: 0;
   }
@@ -569,6 +585,14 @@ ol li::before {
 
 @media only screen and (min-width: 60em) {
 
+  .m-pad-l-1-2 {
+    padding-left: .75rem;
+  }
+
+  .m-pad-r-1-2 {
+    padding-right: .75rem;
+  }
+
   ol {
     padding-left: 1.125rem;
   }
@@ -585,7 +609,9 @@ ol li::before {
   }
 
   .banner-landing {
-    background: url("../images/quidcan/banner-jersey.jpg") center / cover no-repeat;
+    background:
+      linear-gradient(to right, rgba(85, 85, 85, 0), rgba(85, 85, 85, .6), rgba(85, 85, 85, .9)) top left / cover no-repeat,
+      url("../images/quidcan/suraj-2.jpg") center top / cover no-repeat;
     }
 
 

@@ -36,3 +36,11 @@ $(".client-logos a").focus(function () {
 $(".client-logos a").focusout(function () {
   $('.client-logos a').removeClass('hover-fade');
 });
+
+$(".photo-site").focus(function () {
+  $(this).parent().addClass('hovered');
+});
+
+$(".photo-site").focusout(function () {
+  $(this).parent().removeClass('hovered');
+});

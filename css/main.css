@@ -68,6 +68,18 @@ h2 .highlight::before {
   width: 100%;
 }
 
+@media only screen and (min-width: 25em) {
+
+  .s-pad-l-1-2 {
+    padding-left: .65rem;
+  }
+
+  .s-pad-r-1-2 {
+    padding-right: .65rem;
+  }
+
+}
+
 /* ----- =Type ----- */
 
 h2 {
@@ -339,21 +351,35 @@ nav a {
   align-items: stretch;
 }
 
-.banner-landing .wrapper {
+.jersey-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(to top, rgba(85, 85, 85, .75), rgba(85, 85, 85, .75)) top left / cover no-repeat,
+    url("../images/quidcan/jersey-cta.jpg") center center / cover no-repeat;
+}
+
+.banner-landing .wrapper,
+.jersey-cta .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.banner-landing-content {
+.banner-landing-content,
+.jersey-cta-content {
   /* width: 50%;
   margin-left: 50%; */
   color: #fff;
   text-align: center;
+  max-width: 35em;
 }
 
-.banner-landing-content h1 {
-  text-transform: none;
+.banner-landing-content h1,
+.jersey-cta h2 {
+  text-transform: none!important;
+  border: none;
 }
 
 .banner-landing-content .smooth-scroll .unit:first-child {
@@ -489,7 +515,6 @@ ol li::before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 66.6667%;
 }
 
 .unit-bg-form {
@@ -501,13 +526,62 @@ ol li::before {
   padding: 1.3rem 0;
 }
 
+.hover-overlay {
+  background: linear-gradient(to bottom, rgba(85, 85, 85, 0), rgba(85, 85, 85, .6)) left bottom / 100% 25% no-repeat;
+  opacity: 0;
+  transition: all .25s linear;
+}
+
+.unit:hover .hover-overlay,
+.unit:focus .hover-overlay,
+.unit:active .hover-overlay,
+.hovered .hover-overlay {
+  opacity: 1;
+}
+
+.photo-site {
+  position: absolute;
+  left: -1rem;
+  bottom: .5rem;
+  color: #fff;
+  opacity: 0;
+  transition: all .25s ease-in-out;
+}
+
+.photo-site.photo-site-right {
+  right: -1rem;
+  left: auto;
+}
+
+.unit:hover .photo-site,
+.unit:focus .photo-site,
+.unit:active .photo-site,
+.hovered .photo-site {
+  left: 1rem;
+  opacity: 1;
+}
+
+.unit:hover .photo-site-right,
+.unit:active .photo-site-right,
+.unit:focus .photo-site-right,
+.hovered .photo-site-right {
+  right: 1rem;
+  left: auto;
+}
+
+.embed-fill {
+  width: 100%;
+  height: 100%;
+  padding-top: 66.6666%;
+}
+
 @media only screen and (min-width: 38em) {
 
-  .m-pad-l-1-2 {
+  .s-pad-l-1-2 {
     padding-left: .7rem;
   }
 
-  .m-pad-r-1-2 {
+  .s-pad-r-1-2 {
     padding-right: .7rem;
   }
 
@@ -565,7 +639,7 @@ ol li::before {
     margin-bottom: 0;
   }
 
-  .unit-bg {
+  .embed-fill {
     padding-top: 0;
   }
 
@@ -585,11 +659,11 @@ ol li::before {
 
 @media only screen and (min-width: 60em) {
 
-  .m-pad-l-1-2 {
+  .s-pad-l-1-2 {
     padding-left: .75rem;
   }
 
-  .m-pad-r-1-2 {
+  .s-pad-r-1-2 {
     padding-right: .75rem;
   }
 
@@ -597,21 +671,28 @@ ol li::before {
     padding-left: 1.125rem;
   }
 
-  .banner-landing .wrapper {
+  .banner-landing .wrapper,
+  .jersey-cta .wrapper {
     justify-content: flex-end;
   }
 
-  .banner-landing-content {
+  .banner-landing-content,
+  .jersey-cta-content {
     width: 50%;
-    margin-left: 50%;
     color: #fff;
     text-align: left;
   }
 
   .banner-landing {
     background:
-      linear-gradient(to right, rgba(85, 85, 85, 0), rgba(85, 85, 85, .6), rgba(85, 85, 85, .9)) top left / cover no-repeat,
+      linear-gradient(to right, rgba(85, 85, 85, 0), rgba(85, 85, 85, .9)) top right / 66% 100% no-repeat,
       url("../images/quidcan/suraj-2.jpg") center top / cover no-repeat;
+    }
+
+  .jersey-cta {
+    background:
+      linear-gradient(to right, rgba(85, 85, 85, 0), rgba(85, 85, 85, .9)) top right / 66% 100% no-repeat,
+      url("../images/quidcan/jersey-cta.jpg") center / cover no-repeat;
     }
 
 
